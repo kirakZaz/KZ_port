@@ -1,49 +1,9 @@
 .main {
     padding: 20px;
     background: #ececec;
-    height: 100vh;
+    min-height: 100vh;
     p{
         margin: 0;
     }
 }
 
-
-.aboutPage{
-    padding: 0 2.5%;
-    .about{
-        width: 100%;
-        border: 1px solid #bababa;
-        padding: 15px 10px;
-        margin: 0 auto;
-        text-align: center;
-    }
-    .aboutInn {
-        font-size: 16px;
-        display: flex;
-        span {
-            display: block;
-            text-decoration: underline;
-            margin: 15px 0 7px 0;
-        }
-        &>*{
-            border: 1px solid #bababa;
-            margin: 10px 7px 0;
-            padding: 10px;
-        }
-        .education {
-            margin-left: 0;
-            min-width: 25%;
-        }
-        .experience{
-            max-width: 65%;
-        }
-        .skills{
-            margin-right: 0;
-            max-width: 28%;
-            min-width: 20%;
-            li{
-                margin-bottom: 10px;
-            }
-        }
-    }
-}

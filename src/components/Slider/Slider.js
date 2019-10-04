@@ -1,11 +1,11 @@
 import React from 'react';
-import imgsData from '../../_images.json'
+import imgsData from '../../images.json'
 import './style.scss'
 
 
 class Slider extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             images: imgsData,
@@ -43,7 +43,6 @@ class Slider extends React.Component {
 
 
     render() {
-        console.log(this.state)
         return (
             <div className="slider">
                 <div className="slider-wrapper"
@@ -79,7 +78,8 @@ const Slide = ({ image }) => {
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 60%'
     };
-    return <div className="slide" style={styles}></div>
+    return <div className="slide" style={styles}>
+    </div>
 };
 
 
@@ -87,7 +87,6 @@ const LeftArrow = (props) => {
     return (
         <div className="backArrow arrow" onClick={props.goToPrevSlide}>
             <i className="fa fa-arrow-left fa-2x" aria-hidden="true">
-
             </i>
         </div>
     );
@@ -98,7 +97,6 @@ const RightArrow = (props) => {
     return (
         <div className="nextArrow arrow" onClick={props.goToNextSlide}>
             <i className="fa fa-arrow-right fa-2x" aria-hidden="true">
-
             </i>
         </div>
     );

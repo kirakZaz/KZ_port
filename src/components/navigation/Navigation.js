@@ -8,16 +8,10 @@ export class Navigation extends React.Component{
         return (
             <div className={'navigation'}>
                 <ul>
-                    <li>
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
-                    <li>
-                        <Link to="/draws">Draws</Link>
-
-                    </li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/draws">Draws</Link></li>
+                    <li><Link to="/contact">Contact me</Link></li>
                 </ul>
             </div>
         );
