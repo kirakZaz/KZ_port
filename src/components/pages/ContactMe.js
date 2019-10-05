@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as contactAction from '../../actions/contactAction';
+import * as yup from 'yup';
+import { getUnique, prop } from '../utils/helpers.js'
 
 class ContactMe extends React.Component {
 
@@ -10,33 +12,113 @@ class ContactMe extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.state = {
             name: '',
+            nameError: '',
             email: '',
+            emailError: '',
             content: '',
-            contacts: []
-        }
+            contacts: [],
+            sendButtonVisibility: '',
+            isSendButtonVisibility: true
+        };
+
+
     }
+
+
+    validationSchemas = {
+        name: yup.string().required("Name is Required."),
+        email: yup
+            .string()
+            .email("Please Enter an valid Email")
+            .required("Email is Required.")
+            // .test('email', 'Email must be unique', val => {})  //////////??????????
+
+
+
+    };
+
+    validate = (name, value) => {
+        const validationSchema = this.validationSchemas[name];
+        const error = name + 'Error';
+
+        if (!validationSchema) {
+            return;
+        }
+
+        validationSchema.validate(value)
+            .then(() => {
+                this.setState({
+                    [name]: value,
+                    [error]: ''
+                })
+            })
+            .catch(err => {
+                this.setState({
+                    [name]: value,
+                    [error]: err.errors[0]
+                })
+            });
+        this.isSendVisible()
+    };
+
+    isSendVisible = () => {
+        const { emailError, nameError } = this.state;
+        const isSendVisible = Boolean(emailError) || Boolean(nameError);
+        const sendButtonClass = !isSendVisible ? 'enable' : 'disable';
+
+        this.setState({
+            sendButtonVisibility: sendButtonClass,
+            isSendButtonVisibility: !isSendVisible
+        })
+    };
 
     handleChange = name => e => {
         const value = e.target.value;
-        this.setState({[name]: value});
+
+        this.setState({
+            [name]: value},
+            () => this.validate(name, value)
+        )
     };
 
     handleSubmit = (e) => {
         const { createContact } = this.props;
         const { name, email, content } = this.state;
-        e.preventDefault()
-        createContact(name, email, content)
+
+        e.preventDefault();
+        createContact(name, email, content);
+
+        this.setState({
+            name: '',
+            email: '',
+            content: ''
+        });
+        this.validate({'name': name, 'email': email})
     };
 
     getContacts = () => {
-        const { contacts } = this.props;
-        this.setState({contacts})
-    }
+        const { contactsList } = this.props;
+        const clearContacts = getUnique(contactsList.contacts, 'email');
+
+        this.setState({
+            contacts: clearContacts
+        })
+    };
 
     render() {
         // console.log('$',this.state)
-        // console.log('@',this.props.contacts)
-        const { contacts } = this.state;
+        // console.log('@',this.props)
+        const {
+            contacts,
+            name,
+            email,
+            content,
+            emailError,
+            nameError,
+            sendButtonVisibility,
+            isSendButtonVisibility
+        } = this.state;
+
         return (
             <div className={'contactForm'}>
                 <div className={'contactFormWrapper'}>
@@ -44,21 +126,36 @@ class ContactMe extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div>
                             <label>Name: </label>
-                            <input type="text" name='name' onChange={this.handleChange('name')}/>
+                            <input type="text" name='name' value={name} onChange={this.handleChange('name')} onBlur={this.validate.bind(this, 'name', name)}/>
+                            <span>{nameError}</span>
                         </div>
                         <div>
                             <label>Email: </label>
-                            <input type="email" name='email' onChange={this.handleChange('email')}/>
+                            <input
+                                type="email"
+                                name='email'
+
+                                value={email}
+                                onChange={this.handleChange('email')}
+                                onBlur={this.validate.bind(this, 'email', email)}
+                            />
+                            <span>{emailError}</span>
                         </div>
                         <div>
                             <label>Content: </label>
-                            <textarea name='content' onChange={this.handleChange('content')}/>
+                            <textarea name='content' value={content} onChange={this.handleChange('content')}/>
                         </div>
                         <div className={'buttons'}>
-                            <button onClick={this.getContacts}>Get All Contacts</button>
-                            <input type="submit"/>
+                            <button
+                                type="submit"
+                                disabled={!isSendButtonVisibility}
+                                className={sendButtonVisibility}
+                            >Send</button>
                         </div>
                     </form>
+                    <div className={'buttons'}>
+                        <button onClick={this.getContacts}>Get All Contacts</button>
+                    </div>
                 </div>
                 <div className={'contactsList'}>
                     <ul>
@@ -82,9 +179,10 @@ class ContactMe extends React.Component {
 
 
 const mapStateToProps = (state, ownProps) => {
-    const { contacts } = state
+    const { contacts } = state;
+
     return {
-        contacts
+        contactsList: contacts
     }
 };
 
