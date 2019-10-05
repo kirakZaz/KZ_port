@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import * as contactAction from '../../actions/contactAction';
 import * as yup from 'yup';
-import { getUnique, prop } from '../utils/helpers.js'
+import { getUnique } from '../utils/helpers.js'
 
 class ContactMe extends React.Component {
 

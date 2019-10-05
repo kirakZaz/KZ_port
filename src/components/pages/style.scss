@@ -1,16 +1,43 @@
 
 .aboutPage{
-  padding: 0 2.5%;
+  padding: 35px 2.5% 0;
+  background: #212322;
   .about{
     width: 100%;
-    border: 1px solid #bababa;
-    padding: 15px 10px;
-    margin: 0 auto;
-    text-align: center;
+    //padding: 80px 10px;
+    margin: 25px auto 0;
+    display: flex;
+    align-items: center;
+
+    .aboutBg{
+      //background: url('../../pictures/me2.jpg') no-repeat;
+      width: 43%;
+      img{
+        width: 100%;
+        position: relative;
+        //top: 50%;
+        //transform: translateY(-50%);
+      }
+    }
+    .aboutContent{
+      text-align: right;
+      font-size: 1.5vw;
+      color: #d1d1d1;
+      width: 57%;
+      padding-left: 3%;
+    }
+    span{
+      display: block;
+      margin-bottom: 25px;
+    }
+    .lastChild, .firstChild{
+      margin-bottom: 0px;
+    }
+
   }
   .aboutInn {
     font-size: 16px;
-    display: flex;
+    //display: flex;
     span {
       display: block;
       text-decoration: underline;
@@ -103,3 +130,51 @@
     }
   }
 }
+ .homePage{
+   position: relative;
+   .me{
+     opacity: 0.9;
+     filter: alpha(opacity=60);
+     background-size: 100%;
+      background: url('../../pictures/2.jpg') no-repeat;
+     position: relative;
+     img{
+       width: 100%;
+     }
+     .darkness{
+       width: 100%;
+       height: 100%;
+       background: #0000008c;
+       display: block;
+       position: absolute;
+       top: 0;
+     }
+   }
+   .hello{
+     position: absolute;
+     top: 177px;
+     color: #e1e1e1;
+     padding: 13px 0;
+     text-align: center;
+     font-size: 26px;
+     left: 25%;
+     right: 25%;
+     span{
+       color: #ff673c;
+       font-weight: 600;
+     }
+     a.homeLink{
+       clear: both;
+       display: inline-block;
+       margin-top: 25px;
+       color: #fff;
+       text-decoration: none;
+       padding: 7px 10px;
+       border: 2px solid #fff;
+       &:hover{
+         background: #393939a3;
+         border-color: #bababa;
+       }
+     }
+   }
+ }
