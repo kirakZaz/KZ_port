@@ -89,13 +89,12 @@ class Slider extends React.Component {
 
 const Slide = ({ image }) => {
     const styles = {
-        // backgroundImage: `url(${image})`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 60%'
     };
     return <div className="slide" style={styles}>
-        <img src={`${image}`}/>
+        <img src={`${image}`} alt={''}/>
     </div>
 };
 
