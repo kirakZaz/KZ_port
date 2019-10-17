@@ -81,7 +81,7 @@ const About = () => (
                         <div className={'bgPicEshop'}>
                             <span>2015 – 2018</span>
                         </div>
-                        <p>
+                        <div>
                             <b>E-shop, Ness-Ziona, Israel</b>
                             <ul>
                                 <li>Participated in build and renovation of unified platform for simple and fast developing of the online shops.
@@ -90,7 +90,7 @@ const About = () => (
                                 <li>Expert in the platform back-doors implementation through jQuery capabilities.</li>
                                 <li>Builds customer online shops.</li>
                             </ul>
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>

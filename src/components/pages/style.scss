@@ -2,11 +2,15 @@
 .aboutPage{
   padding: 35px 0 0;
   background: #212322;
+  color: #cfcfcf;
+
+
   .aboutIntro{
     width: 100%;
     margin: 25px auto 0;
     display: flex;
     padding: 0 2.5%;
+    position: relative;
     .aboutIntroInn{
       width: 40%;
       padding-top: 45px;
@@ -46,6 +50,7 @@
           width: auto;
           display: inline-block;
           margin-right: 10px;
+          border-radius: 5px;
         }
       }
     }
@@ -55,11 +60,20 @@
     .lastChild, .firstChild{
       margin-bottom: 0px;
     }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 99.91%;
+      left: 0;
+      right: 0;
+      padding-bottom: 10%;
+      background: #212322;
+      clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+      z-index: 1;
+    }
   }
   .aboutInn {
     font-size: 16px;
-    //display: flex;
-    color: #fff;
     span {
     }
     &>*{
@@ -68,19 +82,10 @@
     }
     .education {
       background: #3b3b3bcc;
-      margin: 35px 0 0;
-      padding: 100px 0 60px;
+      margin: 0;
+      padding: 15% 0 60px;
       position: relative;
-      &::before{
-        content: '';
-        border-left: 765px solid transparent;
-        border-top: 65px solid #212322;
-        position: absolute;
-        top: 0;
-        right: 0;
-        left: 0;
-        border-right: 765px solid transparent;
-    }
+
       h2{
         text-align: center;
         margin-bottom: 70px;
@@ -124,10 +129,21 @@
           background-image: url('../../pictures/udemy2.png');
         }
       }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 99.91%;
+        left: 0;
+        right: 0;
+        padding-bottom: 10%;
+        background: #3b3b3bcc;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+        z-index: 1;
+      }
     }
     .experience {
       margin: 0;
-      padding-top: 90px;
+      padding-top: 15%;
       position: relative;
       padding-bottom: 70px;
 
@@ -146,6 +162,7 @@
         display: flex;
         & > div {
           padding: 0 50px;
+          font-size: 18px;
         }
 
         ul {
@@ -155,17 +172,6 @@
         b {
           margin-bottom: 15px;
           display: block;
-        }
-
-        &::before {
-          content: '';
-          border-left: 765px solid transparent;
-          border-right: 765px solid transparent;
-          border-top: 65px solid #3b3b3bcc;
-          position: absolute;
-          top: 0;
-          right: 0;
-          left: 0;
         }
 
         .bgPicEshop, .bgPicBeehive {
@@ -209,12 +215,17 @@
 //----------------------
 
 .contactForm {
-  display: flex;
-  justify-content: center;
+  background: #212322;
+  padding: 50px 0 0;
 
   .contactFormWrapper{
     width: 35%;
-    margin-right: 5%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #cfcfcf;
     form {
       font-size: 16px;
 
@@ -265,13 +276,26 @@
     }
   }
   .contactsList {
-    min-width: 35%;
-    padding-top: 48px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    background: #212322;
+    padding: 35px 10px;
+    color: #cfcfcf;
+    text-align: center;
+    ul{
+      list-style: none;
+      padding: 0;
+    }
     span{
       margin-right: 6px;
     }
   }
 }
+
+
+//-----------------------
+
  .homePage{
    position: relative;
    .me{
@@ -320,3 +344,48 @@
      }
    }
  }
+
+@media only screen and (max-width: 1200px)  {
+  .aboutPage {
+    .aboutIntro{
+      display: block;
+      position: relative;
+      .aboutIntroInn, .skills {
+        width: 100%;
+        padding: 5% 2%;
+      }
+      .aboutIntroInn{
+        .aboutIntroContent{
+          font-size: 18px ;
+        }
+      }
+
+    }
+    .aboutInn{
+      .education{
+        margin: 0;
+        .educationWrapper{
+          display: block;
+          .bgPicAvni{
+            background-size: 70px;
+            background-position: center 80%;
+          }
+          &> div{
+            min-width: 100%;
+            margin-bottom: 35px;
+          }
+        }
+
+      }
+      .experience{
+        .experienceInn{
+          display: block;
+        &> div{
+          width: 100%;
+          margin-bottom: 50px;
+        }
+        }
+      }
+    }
+  }
+}

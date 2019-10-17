@@ -10,13 +10,22 @@ class Slider extends React.Component {
         this.state = {
             images: imgsData,
             currentIndex: 0,
-            translateValue: 0
+            translateValue: 0,
+            leftArrow: ''
         }
     }
 
     goToPrevSlide = () => {
-        if(this.state.currentIndex === 0)
+        if(this.state.currentIndex === 0){
+            this.setState({
+                leftArrow: 'disableBtn'
+            });
             return;
+        } else {
+            this.setState({
+                leftArrow: ''
+            });
+        }
         this.setState(prevState => ({
             currentIndex: prevState.currentIndex - 1,
             translateValue: prevState.translateValue + this.slideWidth()
@@ -27,8 +36,13 @@ class Slider extends React.Component {
         if(this.state.currentIndex === this.state.images.length - 1) {
             return this.setState({
                 currentIndex: 0,
-                translateValue: 0
+                translateValue: 0,
+                leftArrow: 'disableBtn'
             })
+        } else {
+            this.setState({
+                leftArrow: ''
+            });
         }
 
         this.setState(prevState => ({
@@ -50,6 +64,7 @@ class Slider extends React.Component {
                          transform: `translateX(${this.state.translateValue}px)`,
                          transition: 'transform ease-out 0.45s'
                      }}>
+
                     {
                         this.state.images.map((image, i) => {
                             return (
@@ -60,6 +75,7 @@ class Slider extends React.Component {
 
                 <LeftArrow
                     goToPrevSlide={this.goToPrevSlide}
+                    firstSlide={this.state.leftArrow}
                 />
 
                 <RightArrow
@@ -73,19 +89,21 @@ class Slider extends React.Component {
 
 const Slide = ({ image }) => {
     const styles = {
-        backgroundImage: `url(${image})`,
+        // backgroundImage: `url(${image})`,
         backgroundSize: 'contain',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: '50% 60%'
     };
     return <div className="slide" style={styles}>
+        <img src={`${image}`}/>
     </div>
 };
 
 
 const LeftArrow = (props) => {
+    const { firstSlide } = props;
     return (
-        <div className="backArrow arrow" onClick={props.goToPrevSlide}>
+        <div className={`${firstSlide} backArrow arrow`} onClick={props.goToPrevSlide}>
             <i className="fa fa-arrow-left fa-2x" aria-hidden="true">
             </i>
         </div>
