@@ -1,0 +1,6 @@
+IMC "Pulse Secure - HC IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\hcimc.dll
+IMC "Pulse Secure - System IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\jsystemimc.dll
+IMC "Pulse Secure - Certificate IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\CertAuthIMC.dll
+IMC "Pulse Secure - SoH IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\SoHIMC.dll
+IMC "Pulse Secure - Opswat IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\OpswatIMC.dll
+IMC "Pulse Secure - Advanced IMC" C:\Program Files (x86)\Common Files\Pulse Secure\TNC Client Plugin\AdvancedIMC.dll

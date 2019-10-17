@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = 关联失败。
+Long-desc = 关联至网络失败。
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = 无 Internet 访问。
+Long-desc = 在网络上进行 Internet 检测失败。
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = 用户名或密码无效。
+Long-desc = 网络验证失败。
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = 基于 Web 的验证失败。
+Long-desc = 基于浏览器登录网络已超时或失败。
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = 证书无效。
+Long-desc = 证书凭据无效或不可用。
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = 网络已取消。
+Long-desc = 连接优先级较高的网络时，访问网络遭到策略封锁。
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = 自动连接中...
+Long-desc = 网络正在根据配置设置尝试自动连接。
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = 取消连接中...
+Long-desc = 正在取消连接网络的尝试。
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = 检测到媒体。
+Long-desc = 检测到实际网络媒体。
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = 连接到媒体中...
+Long-desc = 正在尝试连接到实际网络媒体。
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = 已连接到媒体。
+Long-desc = 已连接到实际网络媒体。
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = 等待网络密钥中...
+Long-desc = 正在等待用户输入网络配置密钥。
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = 等待用户凭据中...
+Long-desc = 正在等待用户输入其登录凭借。
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = 正在验证...
+Long-desc = 正在尝试利用网络验证用户凭据。
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = 正在重新尝试验证...
+Long-desc = 正在重新尝试利用网络验证用户凭据。
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = 检测地点中...
+Long-desc = 正在检测网络地点。
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = 等待用户同意中...
+Long-desc = 正在等待用户接受共识协议。
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = 检测 Internet 中...
+Long-desc = 正在网络上尝试检测 Internet。
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = 注销中...
+Long-desc = 正在从网络中注销用户。
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = 已注销。
+Long-desc = 用户已从网络注销。
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = 从媒体断开连接中...
+Long-desc = 正从物理网络媒体断开连接。
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = 已连接。
+Long-desc = Pulse 已连接至 IVE。
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = 无效的参数。
+Long-desc = 已指定无效的参数。
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = 连接错误。
+Long-desc = 连接错误。
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = 连接发生错误。
+Long-desc = 建立 Pulse 连接时发生错误。
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = 连接不存在。
+Long-desc = 连接不存在。
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = 已取消。
+Long-desc = Pulse 连接已被用户取消。
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = 无效的客户端证书。
+Long-desc = 无效的客户端证书。
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = 超时。
+Long-desc = Pulse 连接超时。
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = 不允许用户连接。
+Long-desc = Pulse 连接已失败，不允许用户连接。
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = 不允许策略覆盖。
+Long-desc = Pulse 连接已失败，不允许策略覆盖。
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Pulse 尚未运行。
+Long-desc = Pulse 尚未运行。
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Pulse 已断开连接。
+Long-desc = Pulse 已断开连接。
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Pulse 已退出。
+Long-desc = Pulse 已退出。
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = 已经连接。
+Long-desc = Pulse 已经连接至 IVE。
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = 已经断开连接。
+Long-desc = Pulse 已经断开与 IVE 的连接。
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = 已挂起。
+Long-desc = 连接已挂起。
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = 已挂起。
+Long-desc = 连接已挂起。
+
+; kMsgPCLResumed
+[3024]
+Short-desc = 已恢复。
+Long-desc = 连接已恢复。
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = 操作对于当前连接状态无效。
+Long-desc = 当前连接状态期间无法执行操作。
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = 意外错误。
+Long-desc = 意外错误。

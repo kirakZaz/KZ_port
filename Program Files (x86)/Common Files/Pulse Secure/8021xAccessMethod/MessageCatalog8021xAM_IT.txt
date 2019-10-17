@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = Nessun profilo WLAN Windows
+Long-desc = Verificare la configurazione della rete wireless ed eseguire nuovamente l'operazione.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = Nessun SSID nell'intervallo per la richiesta di connessione.
+Long-desc = Verificare la configurazione della rete wireless e la potenza del segnale SSID, quindi eseguire nuovamente l'operazione.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = Connessione IVE non riuscita
+Long-desc = Riavviare manualmente la connessione.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Nessuna risposta da Windows alla richiesta di connessione.
+Long-desc = Il cavo di rete potrebbe essere scollegato oppure collegato a una porta non 802.1x (sullo switch). Correggere la causa possibile e riavviare manualmente la connessione.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = Richiesta di rete 802.1x wireless non riuscita
+Long-desc = Riavviare manualmente la connessione.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Riavvio autenticazione di Microsoft Windows.
+Long-desc = Riavvio autenticazione del supplicant 802.1x di Microsoft Windows. La connessione verrà ripristinata a breve.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = Eliminazione in corso delle reti wireless 802.1x.
+Long-desc = L'eliminazione delle reti wireless è stata attivata dall'amministratore. Le reti wireless 802.1x vengono eliminate al rilevamento di una rete cablata valida.

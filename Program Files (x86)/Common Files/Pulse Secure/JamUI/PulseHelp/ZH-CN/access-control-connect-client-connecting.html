@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>连接到网络</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Head1Split" id="jd0e857">连接到网络</h1><p class="Para1">您必须至少具有一个已配置的连接，才能连接到网络。您所看到的提示取决于网络访问环境。 </p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">要将 Pulse Secure 客户端用于无线网络，可能需要先通过 Windows 或安装在端点上的无线设备软件来配置端点的无线网络设置。网络管理员也可以定义无线连接和扫描列表，并将它们包括在 Pulse Secure 客户端安装中。 </p></td></tr></table></div><p class="Para1">如果服务器 URL 显示为<strong>随机选择</strong>，则表示此连接已由 Pulse Secure 客户端管理员定义。此连接配置了一系列 Pulse Secure 客户端服务器（而非一台目标服务器），Pulse Secure 客户端将随机选择目标服务器。包含服务器列表的所有连接都将在连接详细信息中显示<strong>更改</strong>按钮。单击<strong>更改</strong>按钮，然后从列表中选择目标服务器。Pulse Secure 客户端管理员可配置该列表，以便 Pulse Secure 客户端始终连接到列表中的第一台服务器、您最近连接的服务器，或者连接到从列表中随机选择的服务器。 </p><div style=""><p class="Para1">要使用已定义的连接来连接到网络，请执行以下操作：</p></div><ol type="1"><li id="jd0e891" style="">针对要建立的连接单击<strong>连接</strong>。<p class="Para1"><strong>或者</strong></p><p class="Para1">在系统托盘中，右键单击 Pulse Secure 客户端图标以显示弹出菜单，单击连接，然后单击<strong>连接</strong>。</p></li><li id="jd0e905" style="">响应相关信息的提示，如用户名和密码、领域、角色等。您所看到的提示取决于网络管理员配置访问环境的方式。 <p class="Para1"/></li><li id="jd0e909" style="">出现连接状态对话框。如果连接尝试成功，则可单击<strong>关闭</strong>，或者稍等片刻以便对话框自动关闭。 <p class="Para1">如果连接尝试出现问题，&ldquo;修复&rdquo;对话框将显示问题解决方法的相关信息，或者弹出单独的&ldquo;修复&rdquo;对话框并显示 Pulse Secure 客户端为修复问题所自动采取的措施的进度。</p></li></ol><p class="Para1">单击<strong>连接</strong>按钮后，可能需要对以下提示做出响应：</p><ul><li style=""><strong>证书</strong>&mdash;如果 Pulse Secure 客户端需要与一台证书服务器通信，而网络管理员配置了多台服务器，则系统会提示您选择其中一台服务器。由证书授权机构颁发的证书用于验证所连接的网络资源是否有效。如果证书来自信任来源，则会被自动接受，并且系统将不显示证书提示。如果证书出现问题，系统可能会询问您是否接受该证书并继续进行连接。</li><li style=""><strong>领域</strong>&mdash;<i>领域</i>定义可访问的网络资源。如果您有权访问多个领域，则需要选择一个领域。</li><li style=""><strong>凭证</strong>&mdash;您的用户名和密码或者用户名和令牌代码用于确定您访问设备时的身份。系统还可能提示您输入辅助用户名和密码以及代理服务器的用户名和密码。验证环境可能会定期提示您更改密码或令牌 PIN 号码。 </li><li style=""><strong>角色</strong>&mdash;<i>角色</i>定义会话参数（超时值、允许的并发会话数等）、个性化设置和启用的访问功能。网络管理员可以让您在连接时选择所需的角色。 </li><li style=""><strong>并发会话</strong>&mdash;如果您多次登录到系统，例如您从两台不同的计算机使用相同的凭证登录，则系统可能提示您先结束当前对话，然后才能开始新会话。</li><li style=""><strong>修复操作</strong>&mdash;系统可能会提示您执行一些操作以使端点符合安全策略。 </li></ul><div style=""><p class="Para1">&ldquo;保存设置&rdquo; 复选框可能会出现在每个登录屏幕上。（您的管理员可以禁用此功能。）如果您启用复选框，下次登录时，您将不再被提示此消息。如果保持设置，您可以使用忘记已保存的设置功能来恢复提示登录信息。注意，如果您在有具有活动连接时选择了&ldquo;忘记保存的设置&rdquo;，&ldquo;挂起连接&rdquo;选项将不可用。&ldquo;保存设置&rdquo;功能使您能够保存以下信息：</p></div><ul><li style="">证书接受</li><li style="">证书选择</li><li style="">领域 </li><li style="">用户名和密码</li><li style="">代理用户名/密码</li><li style="">辅助用户名/密码</li><li style="">角色</li></ul><p class="Para1">对所有连接提示做出响应后，所采取的步骤取决于网络管理员所配置的访问策略以及网络访问设备的类型。连接过程可包含以下任务：</p><ul><li style=""><strong>软件更新</strong>&mdash;Pulse Secure 客户端可以在连接时自动更新。例如，当第一次连接到新的网络访问设备类型时，系统可能会收到更新的 Pulse Secure 客户端软件，或者您收到用于支持扩展服务的附加软件模块。</li><li style=""><strong>主机检查程序</strong>&mdash;&ldquo;主机检查程序&rdquo;可检查端点，以确定其是否符合您组织的安全策略。例如，&ldquo;主机检查程序&rdquo;可以检查防病毒软件、最新的病毒特征、个人防火墙状态以及是否存在恶意软件和间谍软件。&ldquo;主机检查程序&rdquo;还可以执行禁用浏览器自动完成功能和清空回收站之类的任务。这些设置由网络管理员定义。如果&ldquo;主机检查程序&rdquo;发现问题，则会显示一条消息来说明修复该问题所必须采取的步骤，或者会自动发起修复操作。</li><li style=""><strong>高速缓存清理程序</strong>&mdash;高速缓存清理程序会删除 Internet Explorer 存储的临时文件。&ldquo;高速缓存清理程序&rdquo;以&ldquo;主机检查程序&rdquo;选项的形式运行。</li></ul><h4 class="Head4" id="jd0e1022">相关文档</h4><ul><li style=""><a href="access-control-connect-client-ui.html">Pulse Secure 客户端界面</a></li><li style=""><a href="access-control-connect-client-solve-connection-issue.html">解决 Pulse Secure 客户端连接问题</a></li><li style=""><a href="access-control-connect-client-forget-credentials.html">忘记保存的设置</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-2017，Pulse Secure, LLC.保留所有权利。</span></div></body></html>

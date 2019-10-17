@@ -1,0 +1,95 @@
+;++
+;
+; Copyright (c) 2007 Juniper Networks, Inc.
+;
+; Module Name:
+;
+;   JNPRVAMGR.INF
+;
+; Abstract:
+;
+;   INF file for installing Juniper Virtual Adapter Manager bus driver.
+;
+; Installation Notes:
+;
+;   Using Devcon: Type "devcon install JnprVaMgr.inf JNPRVAMGR" to install
+;
+;--
+[Version]
+Signature="$Windows NT$"
+Class=Net
+ClassGUID={4d36e972-e325-11ce-bfc1-08002be10318}
+Provider=%Jnpr%
+DriverPackageType=PlugAndPlay
+DriverVer=11/18/2009,5.2.0.6009
+CatalogFile=jnprvamgr.cat
+
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[SourceDisksFiles]
+jnprvamgr.sys  = 1,,
+
+;*****************************************
+; JnprVaMgr  Install Section
+;*****************************************
+
+[Manufacturer]
+%Jnpr%=Jnpr,NTAMD64
+
+[ControlFlags]
+ExcludeFromSelect=JnprVaMgr
+
+; For XP and later
+[Jnpr.NTAMD64]
+%JnprVaMgr.DeviceDesc%=JnprVaMgr_Device, JnprVaMgr
+
+[JnprVaMgr_Device]
+Characteristics=0x0009 ; NCF_VIRTUAL | NCF_HIDDEN
+CopyFiles=Drivers_Dir
+
+[JnprVaMgr_Device.HW]
+AddReg=JnprVaMgr_Device.AddReg
+
+[JnprVaMgr_Device.AddReg]                            
+HKR,,DeviceCharacteristics,0x10001,0x0100       ; Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;BA)(A;;GA;;;SY)"    ; Allow generic-all access to Built-in administrators and Local system 
+
+;HKR,,NumberOfAdapters,0x00010001,4				; Number of adapters to enumerate / denumerate on load.
+
+HKR,Ndi,HelpText,0,%JnprVaMgr.HelpText%
+HKR,Ndi,Service,0,"JNPRVAMGR"
+HKR,Ndi\Interfaces,UpperRange,0,"noupper"
+HKR,Ndi\Interfaces,LowerRange,0,"nolower"
+
+[Drivers_Dir]
+jnprvamgr.sys
+
+
+;-------------- Service installation
+[JnprVaMgr_Device.Services]
+AddService = JnprVaMgr,%SPSVCINST_ASSOCSERVICE%, JnprVaMgr_Service_Inst
+
+; -------------- JnprVaMgr driver install sections
+[JnprVaMgr_Service_Inst]
+DisplayName    = %JnprVaMgr.Service.DispName%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START 
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\jnprvamgr.sys
+LoadOrderGroup = Extended Base
+
+
+[Strings]
+SPSVCINST_ASSOCSERVICE		= 0x00000002
+Jnpr						= "Juniper Networks"
+JnprVaMgr.ClassName			= "Juniper Networks Virtual Adapter Manager"
+JnprVaMgr.DeviceDesc		= "Juniper Networks Virtual Adapter Manager"
+JnprVaMgr.HelpText			= "Juniper Networks Virtual Adapter Manager HelpText"
+JnprVaMgr.Service.DispName	= "Juniper Networks Virtual Adapter Manager Service"
+DiskId1						= "Juniper Networks Virtual Adapter Device Installation Disk #1"
+

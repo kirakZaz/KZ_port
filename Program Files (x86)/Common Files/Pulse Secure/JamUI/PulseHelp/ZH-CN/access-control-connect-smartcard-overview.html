@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>认证方法</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Title" id="jd0e451">认证方法</h1><div style=""><p class="Para1">您的 Pulse Secure 客户端管理员可配置 Pulse Secure 客户端连接以使用以下任一认证方法：</p></div><ul><li style=""><p class="Para1"><strong>基于时间的一次性密码 (TOTP)</strong>&mdash;基于时间的一次性密码 (TOTP) 是一种算法，它使用<strong>共享密钥</strong>和<strong>当前时间</strong>来计算只能使用一次且在短时间内会过期的密码（即，令牌）。Pulse Secure 桌面客户端和 Pulse Connect Secure (PCS) 8.2R5 网关支持谷歌的 TOTP 认证服务器 (Google Authenticator)。</p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">Google Authenticator 仅可配置为辅助认证服务器。</p></td></tr></table></div><p class="Para1">最终用户在使用此认证类型之前，注册到一个 TOTP 服务器中去。通常，注册涉及连接至带网络浏览器的 TOTP 认证服务器（例如，PCS 网关）、通过主认证、访问 TOTP 注册密钥、QR 代码和备份代码。用户使用移动设备上的 Google Authenticator 应用程序扫描 QR 代码或手动输入注册密钥后，应用程序将为用户每隔 30 秒钟生成一个 6 位数的令牌。这些令牌可以输入到 Pulse 桌面客户端，用于 TOTP 认证。</p>
+</li><li style=""><strong>令牌认证</strong>&mdash;RSA SecurID 令牌认证，又称为双因素认证，可生成非常难以泄漏的凭证。令牌代码可在客户端和服务器上同时生成。您会创建个人识别码 (PIN)， 然后用户名、PIN 和当前令牌代码将允许您登录到服务器。PIN 加上令牌代码形成密码。令牌代码会在短暂的间隔后过期，新生成的令牌代码将取而代之。第一次使用系统时，Pulse Secure 客户端会提示您创建 PIN。如果系统管理员已经提供 PIN，则会提示您加以更改。如果管理员要求您定期更改 PIN，Pulse Secure 客户端会提示您输入新的 PIN。通常，您必须在更改 PIN 时提供当前的令牌代码。在某些情况下，输入密码后，会在您能访问网络前，提示您输入下一个令牌代码。只需等到令牌设备显示新的令牌代码，然后输入该号码就能继续。<p class="Para1">设备或软件会产生称为认证器的令牌。Pulse Secure 客户端支持全部 SecurID 硬件与软件认证器。硬件（物理） 认证器每 60 秒即会显示新的令牌代码。登录时，您必须有卡或能生成令牌的密钥卡。在 Pulse Secure 客户端登录窗口中，您提供自己的用户名和您的 PIN 码以及当前的令牌代码。USB 认证器可储存 Windows 用户名/密码凭证与数字证书。该设备连接到您的计算机时，就会自动输入令牌代码， 在您提供 PIN 之后，Pulse Secure 客户端自动直接访问设备上的令牌代码。</p><p class="Para1">软件认证器包括智能手机应用程序、台式计算机与便携式计算机软件，以及基于浏览器的应用程序。Pulse Secure 客户端登录程序会按安全管理员配置系统的方式来使用软件认证器。一般来说，如果您已在端点安装 SecurID 软件，Pulse Secure 客户端会在您提供 PIN 后与软件互动，检索令牌代码。 </p></li><li style=""><p class="Para1"><strong>智能卡认证</strong>&mdash;智能卡是包含内嵌用户认证信息的塑料卡。如果您的环境已利用多个数字证书配置，则 Pulse Secure 客户端会提示您选取其中一个。一般来说，如果您已在端点配置智能卡读取器，Pulse Secure 客户端会在您提供 PIN 后与智能卡软件交互，检索令牌代码。 </p></li><li style=""><strong>机器认证</strong>&mdash;机器认证使用机器凭证来认证端点。机器加入域时，凭证由 Active Directory 生成。端点必须是 Windows 域的成员。根据管理员对认证流程的配置，系统将提示您输入 Windows 凭证。 </li><li style=""><p class="Para1"><strong>凭证提供程序</strong>&mdash; Pulse Secure 客户端凭证提供程序集成可实现与网络的连接，您需要上述网络连接才能登录 Windows 域。例如，Windows 域控制器可能驻留于防火墙之后，因此 Pulse Secure 客户端使用凭证提供程序登录，以便在域登录之前连接至 Pulse Secure 客户端服务器。Pulse Secure 客户端与 Microsoft 凭证提供程序集成以实现基于密码的登录和智能卡登录。凭证提供程序界面在 Windows Vista、Windows 7 或 Windows 8 登录屏幕上显示为方块。Pulse Secure 客户端连接的配置应确保登录过程中出现 Pulse Secure 客户端提示，例如，领域或角色选择的提示。Pulse Secure 客户端升级通知和操作在凭证提供程序登录期间禁用，推迟到已建立连接时。 </p></li></ul><h4 class="Head4" id="jd0e532">相关文档</h4><ul><li style=""><a href="access-control-connect-client-configuration-overview.html">Pulse Secure 客户端配置概述</a></li><li style=""><a href="access-control-delete-client-connection-status.html">Pulse Secure 客户端连接状态</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-2017，Pulse Secure, LLC.保留所有权利。</span></div></body></html>

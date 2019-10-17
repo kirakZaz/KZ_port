@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN">
+
+<html><head><title>Pulse Secure</title></head><script type="text/javascript">
+				
+				var fname='main';
+				var url = self.location.href;
+				var file;
+				if(url.indexOf('?') > 0){
+					file = url.substring(url.lastIndexOf('?')+1);
+				}else{
+					file = 'book-access-control-connect-client.html';
+				}
+				var frameset = '<frameset rows="90,*"><frame name="header" frameborder="0" marginheight="0" marginwidth="0" noresize="1" scrolling="no" src="j_header.html"><frameset cols="350,*" id="content"><frame name="tocframe" target="main" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto" src="j_primary_toc.html"><frame name="main" frameborder="0" marginheight="0" marginwidth="0" id="mainframe" scrolling="auto" src="'+ file + '"></frameset></frameset>';
+				document.write(frameset);
+				
+				</script></html>

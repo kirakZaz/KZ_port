@@ -1,0 +1,119 @@
+;++
+;
+; Copyright (c) 2001-2013 Juniper Networks, Inc.
+;
+; Module Name:
+;
+;   JNPRNS.INF
+;
+; Abstract:
+;
+;   INF file for installing Juniper Network Service NDIS LWF Driver.
+;
+;--
+[Version]
+Signature="$Windows NT$"
+Class=NetService
+ClassGUID={4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider=%Jnpr%
+CatalogFile=jnprns.cat
+DriverPackageType=Network
+DriverVer=10/30/2014,5.50.8.50747
+
+[Manufacturer]
+%Jnpr%=JNPR,NTAMD64.5,NTAMD64.6
+
+[ControlFlags]
+ExcludeFromSelect=jnprns
+
+
+; For Win2K
+[JNPR]
+; Win2K not supported.
+
+; For XP and 2K3
+[JNPR.NTAMD64.5]
+; Win2K not supported.
+
+; For Vista and later
+[JNPR.NTAMD64.6]
+%jnprns_Desc%=jnprns.ndi, jnprns
+
+[jnprns.ndi]
+AddReg=jnprns.ndi.AddReg, jnprns.AddReg
+Characteristics=0x40020 ; NCF_LWF_FILTER (0x40000) | NCF_NOT_USER_REMOVABLE (0x20)
+NetCfgInstanceId="{C02D1E54-FBAB-46bb-8052-BE25AB90C99A}"
+CopyFiles=jnprns.Files.Sys
+
+[jnprns.ndi.Remove]
+DelFiles=jnprns.Files.Sys
+
+[jnprns.ndi.Services]
+AddService=jnprns,,jnprns.AddService
+
+[jnprns.ndi.Remove.Services]
+DelService=jnprns,0x200
+
+[jnprns.AddService]
+DisplayName=%jnprnsService_Desc%
+ServiceType=%SERVICE_KERNEL_DRIVER%
+StartType=%SERVICE_SYSTEM_START%
+ErrorControl=%SERVICE_ERROR_NORMAL%
+ServiceBinary=%12%\jnprns.sys
+LoadOrderGroup=NDIS
+AddReg=jnprns.AddService.AddReg
+
+[jnprns.Files.Sys]
+jnprns.sys,,,2
+
+;--------------------------------------------------------------------------
+; Service Registry
+
+[jnprns.AddService.AddReg]
+HKR,"Parameters\Interfaces",,0x00000010,
+
+;--------------------------------------------------------------------------
+; Filter Install
+;
+[jnprns.ndi.AddReg]
+HKR, Ndi,               FilterType,         0x00010001, 0x00000002
+HKR, Ndi,               FilterRunType,      0x00010001, %FILTER_RUN_TYPE_MODIFYING_OPTIONAL% 
+HKR, Ndi,               CoServices,         0x00010000, "jnprns"
+
+[jnprns.AddReg]
+HKR, Ndi,               HelpText,           , %jnprns_HELP%
+HKR, Ndi,               FilterClass,        , jnprns
+HKR, Ndi,               Service,            , jnprns
+HKR, Ndi\Interfaces,    UpperRange,         , noupper
+HKR, Ndi\Interfaces,    LowerRange,         , nolower
+HKR, Ndi\Interfaces,    LowerExclude,       , "ndisatm, ndiscowan, ndiswan, ndiswanasync, ndiswanipv6, ndiswanipx, ndiswannbf, ndiswanbh"
+HKR, Ndi\Interfaces,    FilterMediaTypes,   , "ethernet, wan, jnprncva"
+
+;--------------------------------------------------------------------------
+; File copy
+;
+[SourceDisksNames]
+1   = %DiskDescription%,"",,
+
+[SourceDisksFiles]
+jnprns.sys     = 1
+
+[DestinationDirs]
+DefaultDestDir      = 12
+jnprns.Files.Sys   = 12   ; %windir%\System32\drivers
+
+
+;--------------------------------------------------------------------------
+[Strings]
+Jnpr="Juniper Networks Inc."
+DiskDescription="Juniper Network Service Installation Disk"
+jnprns_Desc="Juniper Network Service"
+jnprns_HELP="Juniper Network Service"
+jnprnsService_Desc="Juniper Network Service"
+
+SERVICE_KERNEL_DRIVER=1
+SERVICE_SYSTEM_START=1
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+
+FILTER_RUN_TYPE_MODIFYING_OPTIONAL=2

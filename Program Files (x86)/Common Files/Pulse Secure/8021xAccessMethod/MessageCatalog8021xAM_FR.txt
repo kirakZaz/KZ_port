@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = Pas de profil de réseau local sans fil Windows
+Long-desc = Vérifiez la configuration de votre réseau sans fil et réessayez.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = Aucun SSID dans la plage pour une requête de connexion.
+Long-desc = Vérifiez votre configuration réseau sans fil et la force du signal SSID, puis retentez l'opération.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = Échec de la connexion IVE
+Long-desc = Redémarrez manuellement la connexion.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows n'a pas répondu à la demande de reconnexion.
+Long-desc = Il se peut que le câble réseau soit débranché, ou branché sur un autre port que le port 802.1x (sur le commutateur). Veuillez corriger la cause éventuelle et redémarrer manuellement votre connexion.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = La demande réseau sans fil 802.1x a échoué
+Long-desc = Redémarrez manuellement la connexion.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows redémarre authentification.
+Long-desc = Microsoft Windows supplicant 802.1x redémarre authentification. Votre connexion doit être repris peu de temps.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = Les réseaux sans fil 802.1x sont en cours de suppression.
+Long-desc = La suppression sans fil a été activée par l'administrateur. Les réseaux sans fil 802.1x sont supprimés lorsqu'un réseau câblé valide est détecté.

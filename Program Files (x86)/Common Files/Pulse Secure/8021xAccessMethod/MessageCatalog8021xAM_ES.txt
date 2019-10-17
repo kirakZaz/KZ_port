@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = No hay perfiles de Windows WLAN
+Long-desc = Verifique la configuración de la red inalámbrica y luego intente realizar nuevamente la operación.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = No se ha detectado ningún SSID para la solicitud de conexión.
+Long-desc = Compruebe la configuración de la red inalámbrica y la intensidad de la señal de difusión de SSID. A continuación, inténtelo de nuevo.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = Error en la conexión de IVE
+Long-desc = Reinicie manualmente la conexión.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows no ha respondido a la solicitud de reconexión.
+Long-desc = Posible causa: puede que el cable de red esté desconectado, o bien, que esté conectado a un puerto que no sea 802.1x (en el conmutador). Corrija esta posible causa y reinicie la conexión manualmente.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = Error al solicitar conexión con red inalámbrica 802.1x
+Long-desc = Reinicie la conexión en forma manual.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows está reiniciando autenticación.
+Long-desc = Microsoft Windows suplicante 802.1x está reiniciando autenticación. Su conexión se debe reanudar en breve.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = Supresión de redes inalámbricas 802.1x habilitada.
+Long-desc = El administrador ha habilitado la supresión de redes inalámbricas. Se suprimirán las redes inalámbricas 802.1x si se detecta una conexión de red por cable válida.

@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = 没有 Windows WLAN 配置文件
+Long-desc = 请验证您的无线网络配置，然后重新尝试此操作。
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = 在连接请求范围内没有 SSID。
+Long-desc = 请验证您的无线网络配置和 SSID 信号强度，然后重新尝试此操作。
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = IVE 连接失败
+Long-desc = 请手动重启您的连接。
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows 没有对重新连接请求作出回应。
+Long-desc = 可能原因是网络电缆被拔出或插入非 802.1x 端口（在交换机上）。请纠正可能原因，并手动重新启动连接。
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = 无线 802.1x 网络请求失败
+Long-desc = 请手动重新启动连接。
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows 正在重新启动身份验证。
+Long-desc = Microsoft Windows 802.1x 请求方正在重新启动身份验证。您的连接将很快恢复。
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = 802.1x 无线网络已被抑制。
+Long-desc = 管理员已启用无线抑制。当检测到有效的有线网络时，会抑制 802.1x 无线网络。

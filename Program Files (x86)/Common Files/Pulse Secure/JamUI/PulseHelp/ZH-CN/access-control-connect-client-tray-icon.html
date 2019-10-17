@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>使用 Pulse Secure 客户端托盘图标并查看连接状态</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Head1Split" id="jd0e1650">使用 Pulse Secure 客户端托盘图标并查看连接状态</h1><p class="Para1">Pulse Secure 客户端托盘图标指示网络连接的当前状态。即使当前有多个连接，托盘中也只会显示一个连接图标。如果任何一个活动连接出现问题，系统托盘图标都会更改其状态。下列图标指示连接状态。</p><div style="width:100%;margin: 15px 0 15px 0;"><table cellspacing="0" border="0" width="99%"><colgroup><col width="37.00px"/><col/></colgroup><tbody><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033411.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">无连接。</p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033410.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">正在连接。连接将保持此状态，直到失败或成功为止。</p></td></tr><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033468.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已挂起。</p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033409.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已连接，但存在问题。</p></td></tr><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033413.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">连接失败。 </p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033408.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已连接。</p></td></tr><tr valign="top"><td align="left" style="text-align: left;padding-right: 10px;padding-left: 10px;"><p class="Para1"><span class="graphic"><img alt="" src="g033433.gif" width="28" height="28"/></span></p></td><td align="left" style="text-align: left;padding-right: 10px;padding-left: 10px;"><p class="Para1">已连接到本地网络，但没有互联网访问可用。公共 WiFi 位置通常部署要求用户输入认证信息或接受服务条款的捕获门户，然后再授予网络访问权限。Pulse Secure 客户端检测到捕获门户的存在，直到获得互联网访问权限才可发起 Pulse Secure 客户端服务器连接。</p></td></tr></tbody></table></div><div style=""><p class="Para1">您也可使用 Pulse Secure 客户端托盘图标来执行以下操作： </p></div><ul><li style=""><strong>打开 Pulse Secure 客户端</strong> - 显示 Pulse Secure 客户端界面。</li><li style=""><strong>Pulse Secure 客户端协作</strong> - 访问 Pulse Secure 客户端协作套件会议功能。此项目仅当 Pulse Secure 客户端管理员启用 Pulse Secure 客户端协作后显示。 </li><li style=""><strong>连接列表</strong> - 列出每个 Pulse Secure 客户端连接。单击连接名称可显示您可以针对该连接执行的操作： <ul><li style=""><strong>连接</strong> - 发起连接。</li><li style=""><strong>断开连接</strong> - 断开所选的网络连接。</li><li style=""><strong>取消</strong> - 取消由 Pulse Secure 客户端服务器发起的操作。当服务器发起&ldquo;主机检查程序&rdquo;操作时，&ldquo;取消&rdquo;选项可用。如果取消，则 Pulse Secure 客户端不会连接到网络。</li><li style=""><strong>挂起</strong> - 挂起 VPN 连接以便访问本地网络资源。注意，当您在具有活动连接时选择&ldquo;忘记保存的设置&rdquo;时，此选项则不可用。</li><li style=""><strong>恢复</strong> - 恢复已挂起 VPN 连接。</li><li style=""><strong>延长会话</strong> - 延长活动连接会话，而不等待 Pulse 通知您会话即使到期。您可以随时选择此选项，以便将会话和空闲计时器重置为其最大值。 </li></ul></li><li style=""><strong>退出</strong> - 关闭 Pulse Secure 客户端并断开任何活动连接的连接。</li></ul><h4 class="Head4" id="jd0e1805">相关文档</h4><ul><li style=""><a href="access-control-connect-client-ui.html">Pulse Secure 客户端界面</a></li><li style=""><a href="access-control-connect-client-extend.html">延长连接会话</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-2017，Pulse Secure, LLC.保留所有权利。</span></div></body></html>

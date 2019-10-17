@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = Windows WLAN プロファイルがありません
+Long-desc = ワイヤレス ネットワーク構成を確認して、もう一度操作を試みてください。
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = 接続要求の範囲内に SSID がありません。
+Long-desc = ワイヤレス ネットワーク構成と SSID 信号強度を確認して、もう一度実行してください。
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = 接続に失敗しました
+Long-desc = 手動で接続を再開してください。
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows は再接続要求に応答しませんでした。
+Long-desc = 原因として、ネットワーク ケーブルが接続されていないか、(スイッチの) 802.1x 以外のポートに接続されている可能性がありあます。原因を修正してから、手動で接続を再開してください。
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = ワイヤレス 802.1x ネットワークの要求に失敗しました
+Long-desc = 手動で接続を再起動してください。
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows は認証を再開します。
+Long-desc = Microsoft Windows802.1x サプリカントは認証を再開します。まもなく接続が再開されます。
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = 802.1x ワイヤレス ネットワークは制限されています。
+Long-desc = 管理者によってワイヤレスの制限が有効にされています。有効な有線ネットワークが検出されると、802.1x ワイヤレス ネットワークは制限されます。

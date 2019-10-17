@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = Association failed.
+Long-desc = Assocation to the network has failed.
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = No Internet Access.
+Long-desc = Internet detection on the network has failed.
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = Invalid username or password.
+Long-desc = Authentication to the network has failed.
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = Web based authentication failure.
+Long-desc = The browser based login to the network has timed out or failed.
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = Invalid certificate.
+Long-desc = The certificate credential is invalid or unavailable.
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = Network suppressed.
+Long-desc = Access to the network is blocked by policy while a higher priority network is connected.
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = Auto connection in progress ...
+Long-desc = The network is attempting to connect automatically based on configuration settings.
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = Cancelling connection ...
+Long-desc = Cancelling the attempt to connect the network.
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = Medium detected.
+Long-desc = The physical network medium has been detected.
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = Connecting to medium ...
+Long-desc = Attempting to connect to the physical network medium.
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = Connected to medium.
+Long-desc = Connected to the physical network medium.
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = Waiting for network key ...
+Long-desc = Waiting for the user to input the network configuration key.
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = Waiting for user credentials ...
+Long-desc = Waiting on the user to input their login credentials.
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = Authenticating ...
+Long-desc = Attempting to authenticate the user credentials with the network.
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = Retrying authentication ...
+Long-desc = Attempting to authenticate the user credentials with the network again.
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = Detecting venue ...
+Long-desc = Detecting network venue.
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = Waiting for user consent ...
+Long-desc = Waiting on the user to accept a consensual agreement.
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = Detecting Internet ...
+Long-desc = Attempting to detect the Internet on the network.
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = Logging off ...
+Long-desc = Logging the user out of the network.
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = Logged off.
+Long-desc = The user is logged off of the network.
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = Disconnecting from medium ...
+Long-desc = Disconnecting from the physical network medium.
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = Connected.
+Long-desc = Pulse connected to the server.
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = Invalid arguments.
+Long-desc = Invalid arguments have been specified.
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = Connection error.
+Long-desc = Connection error.
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = Connected with error.
+Long-desc = Pulse connection established with error.
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = connection does not exist.
+Long-desc = connection does not exist.
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = Cancelled.
+Long-desc = Pulse connection cancelled by user.
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = Invalid client certificate.
+Long-desc = Invalid client certificate.
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = Timeout.
+Long-desc = Pulse connection timeout.
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = User connection not allowed.
+Long-desc = Pulse connection has failed, user connection not allowed.
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = Policy override not allowed.
+Long-desc = Pulse connection has failed, policy override not allowed.
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Pulse is not running.
+Long-desc = Pulse is not running.
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Pulse disconnected.
+Long-desc = Pulse disconnected.
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Pulse has exited.
+Long-desc = Pulse has exited.
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = Already connected.
+Long-desc = Pulse is already connected to the server.
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = Already disconnected.
+Long-desc = Pulse is already disconnected from the server.
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = Suspended.
+Long-desc = Connection has been suspended.
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = Already suspended.
+Long-desc = Connection is already suspended.
+
+; kMsgPCLResumed
+[3024]
+Short-desc = Resumed.
+Long-desc = Connection has been resumed.
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = Invalid operation for current connection state.
+Long-desc = Operation cannot be performed during current state of the connection.
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = Unexpected error.
+Long-desc = Unexpected error.

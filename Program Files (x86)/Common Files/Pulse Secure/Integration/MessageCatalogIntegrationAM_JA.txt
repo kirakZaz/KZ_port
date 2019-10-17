@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = アソシエーションに失敗しました。
+Long-desc = ネットワークへのアソシエーションに失敗しました。
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = インターネットへアクセスできません。
+Long-desc = ネットワーク上でインターネットを検出できませんでした。
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = 無効なユーザー名またはパスワードです。
+Long-desc = ネットワークへの認証に失敗しました。
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = ウェブベースの認証に失敗しました。
+Long-desc = ブラウザによるネットワークへのログインがタイムアウトしたか、または失敗しました。
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = 無効な証明書です。
+Long-desc = 証明書は不正であるか、または使用できません。
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = ネットワークは制限されています。
+Long-desc = ポリシーによって、優先度の高いネットワークに接続されている間はこのネットワークへのアクセスが阻止されます。
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = 自動接続が進行中です…
+Long-desc = ネットワークは設定に基づき自動接続しようとしています。
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = 接続をキャンセル中です…
+Long-desc = ネットワークへの接続試行をキャンセルしています。
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = 媒体が検出されました。
+Long-desc = 物理ネットワーク媒体が検出されました。
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = 媒体に接続中です…
+Long-desc = 物理ネットワーク媒体に接続しようとしています。
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = 媒体に接続しました。
+Long-desc = 物理ネットワーク媒体に接続しました。
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = ネットワーク キーを待機中です…
+Long-desc = ユーザーによるネットワーク設定キーの入力を待機しています。
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = ユーザー証明書を待機中です…
+Long-desc = ユーザーによるログイン証明書の入力を待機しています。
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = 認証中です…
+Long-desc = ネットワークとのユーザー証明書を認証しています。
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = もう一度認証しています…
+Long-desc = ネットワークとのユーザー証明書をもう一度認証しています。
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = べニューを検出中です…
+Long-desc = ネットワーク べニューを検出しています。
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = ユーザーの同意を待機中です…
+Long-desc = ユーザーによる同意契約の受諾を待機しています。
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = インターネットを検出中です…
+Long-desc = ネットワーク上でインターネットを検出しようとしています。
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = ログオフ中です…
+Long-desc = ユーザーをネットワークからログオフしています。
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = ログオフしました。
+Long-desc = ユーザーはネットワークからログオフされました。
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = 媒体から切断中です…
+Long-desc = 物理ネットワーク媒体から切断しています。
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = 接続されました。
+Long-desc = Pulse は IVE に接続しました。
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = 無効な引数です。
+Long-desc = 無効な引数が指定されています。
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = 接続エラー。
+Long-desc = 接続エラー。
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = エラーのまま接続しました。
+Long-desc = Pulse 接続はエラーのまま確立されました。
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = 接続が存在しません。
+Long-desc = 接続が存在しません。
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = キャンセルされました。
+Long-desc = Pulse 接続はユーザによってキャンセルされました。
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = 無効なクライアント証明書です。
+Long-desc = 無効なクライアント証明書です。
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = タイムアウトです。
+Long-desc = Pulse 接続のタイムアウトです。
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = ユーザ接続は許可されません。
+Long-desc = Pulse 接続は失敗しました。ユーザ接続は許可されません。
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = ポリシーの上書きは許可されません。
+Long-desc = Pulse 接続は失敗しました。ポリシーの上書きは許可されていません。
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Pulse は実行されていません。
+Long-desc = Pulse は実行されていません。
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Pulse は切断されました。
+Long-desc = Pulse は切断されました。
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Pulse は終了しています。
+Long-desc = Pulse は終了しています。
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = すでに接続しています。
+Long-desc = Pulse はすでに IVE に接続しています。
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = すでに切断されています。
+Long-desc = Pulse はすでに IVE から切断されています。
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = 一時停止しています。
+Long-desc = 接続が一時停止しています。
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = 既に一時停止しています。
+Long-desc = 接続が既に一時停止しています。
+
+; kMsgPCLResumed
+[3024]
+Short-desc = 再開されました。
+Long-desc = 接続が再開されました。
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = 現在の接続状態では無効な操作です。
+Long-desc = 現在の接続状態では、操作を実行できません。
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = 予期せぬエラーが発生しました。
+Long-desc = 予期せぬエラーが発生しました。

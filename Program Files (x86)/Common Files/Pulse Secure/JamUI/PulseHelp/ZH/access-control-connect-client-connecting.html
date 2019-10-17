@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>連線至網路</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Head1Split" id="jd0e857">連線至網路</h1><p class="Para1">連線至網路前，您必須至少有一個已設定的連線。您看到的提示會根據您的網路存取環境而有所不同。 </p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">若要將 Pulse Secure 用戶端與無線網路搭配使用，您可能需要先透過 Windows 或安裝在端點上的無線裝置軟體，來設定端點的無線網路設定。或者，您的網路管理員可能會定義您的無線連線與掃描清單，並將其包括在 Pulse Secure 用戶端安裝中。 </p></td></tr></table></div><p class="Para1">如果 [伺服器 URL] 顯示<strong>隨機選取</strong>，表示此連線是 Pulse Secure 用戶端管理員定義的。此連線並未設定一個目標伺服器，而是設定列成清單的多個 Pulse Secure 用戶端伺服器，並由 Pulse Secure 用戶端隨機選取目標伺服器。每個包含多個伺服器的連線都會在連線詳細資訊中顯示<strong>變更</strong>按鈕。按一下<strong>變更</strong>按鈕，以從清單中選取目標伺服器。您的 Pulse Secure 用戶端管理員能設定清單，使 Pulse Secure 用戶端一律連線至清單中第一個伺服器、您最近連線的伺服器，或是從清單中隨機選取的伺服器。 </p><div style=""><p class="Para1">若要使用定義的連線來連線至網路：</p></div><ol type="1"><li id="jd0e891" style="">針對您要建立的連線按一下<strong>連線</strong>。<p class="Para1"><strong>或者</strong></p><p class="Para1">在系統匣中的 Pulse Secure 用戶端圖示上按一下滑鼠右鍵以顯示快顯功能表、按一下該連線，再按一下<strong>連線</strong>。</p></li><li id="jd0e905" style="">對要求您輸入使用者名稱、密碼、領域及角色等資訊的提示做出回應。您看到的提示將根據網路管理員設定存取環境的方式而有所不同。 <p class="Para1"/></li><li id="jd0e909" style="">連線狀態對話方塊隨即出現。如果連線嘗試成功，您可以按一下<strong>關閉</strong>，或等待對話方塊自動關閉。 <p class="Para1">如果連線嘗試發生問題，系統會出現矯正對話方塊，顯示該問題解決方法的相關資訊；或者，會有另外的矯正對話方塊出現，並顯示 Pulse Secure 用戶端自動開始修正問題時所採取之措施的進度。</p></li></ol><p class="Para1">按一下<strong>連線</strong>按鈕後，您可能需要對下列提示做出回應：</p><ul><li style=""><strong>認證</strong> - 如果 Pulse Secure 用戶端需要與認證伺服器通訊，且您的網路管理員已設定多個伺服器，則系統會提示您選擇其中一個伺服器。認證授權單位發行的認證會確認您要連線的網路資源是否有效。如果認證是由受信任的來源發行，則系統會自動接受，您不會看到認證提示。如果認證存在問題，系統可能會詢問您是否要接受認證並繼續連線。</li><li style=""><strong>領域</strong> - <i>領域</i>會定義您可以存取的網路資源。如果您擁有多個領域的存取權，則需要選取一個領域。</li><li style=""><strong>驗證資料</strong> - 您的使用者名稱與密碼或使用者名稱與符記代碼，用於建立您存取裝置的識別身份。系統也可能會提示您輸入次要使用者名稱與密碼，及 Proxy 伺服器的使用者名稱與密碼。您的驗證環境可能會定期提示您變更密碼或符記 PIN 號碼。 </li><li style=""><strong>角色</strong> - <i>角色</i>會定義工作階段參數 (逾時值、允許的同時工作階段的數量等)、個人化設定及啟用的存取功能。您的網路管理員可讓您選擇在連線時要扮演的角色。 </li><li style=""><strong>同時工作階段</strong> - 如果您多次登入系統 (例如使用相同的驗證資料從兩部不同的電腦登入)，那麼系統可能會提示您結束目前工作階段，再開始新工作階段。</li><li style=""><strong>矯正動作</strong> - 系統可能會提示您執行一些動作，以使您的端點符合安全性政策。 </li></ul><div style=""><p class="Para1">[儲存設定] 核取方塊會出現於每個登入畫面上。(您的管理員可以停用此功能)。如果您啟用此核取方塊，則在下次登入時，系統將不會提示您該資訊。如果您儲存設定，可以使用 [忘記儲存的設定] 功能來恢復登入時提示儲存資訊。請注意，如果您在有作用中的連線時，選擇 [忘記儲存的設定] 則會無法使用 [暫停] 連線選項。[儲存設定] 功能可讓您儲存下列資訊：</p></div><ul><li style="">認證接受</li><li style="">認證選擇</li><li style="">領域 </li><li style="">使用者名稱與密碼</li><li style="">Proxy 使用者名稱/密碼</li><li style="">次要使用者名稱/密碼</li><li style="">角色</li></ul><p class="Para1">對所有連線提示做出回應後所發生的步驟，取決於您的網路管理員設定的存取政策及網路存取裝置的類型。連線過程可包含下列工作：</p><ul><li style=""><strong>軟體更新</strong> - Pulse Secure 用戶端可於連線時自動更新。您的系統可能會收到更新的 Pulse Secure 用戶端軟體，或您可能會收到其他軟體模組以支援擴充的服務，例如當您第一次連線至新類型的網路存取裝置時。</li><li style=""><strong>主機檢查器</strong> - 主機檢查器會檢查您的端點，以確定其是否符合您組織的安全性政策。例如，主機檢查器可能會檢查防毒軟體、最新病毒碼及個人防火牆狀態，並會檢查是否存在惡意程式與間諜軟體。它也可能會執行其他工作，例如停用瀏覽器自動完成功能，以及清空您的資源回收筒。這些設定由您的網路管理員定義。如果主機檢查器發現問題，它會顯示一則訊息，說明要修正問題您必須執行的步驟，或主機檢查器可自動初始化矯正操作。</li><li style=""><strong>快取清潔器</strong> - 快取清潔器會移除 Internet Explorer 所儲存的暫時檔案。快取清潔器會作為主機檢查器的選項來執行。</li></ul><h4 class="Head4" id="jd0e1022">相關文件</h4><ul><li style=""><a href="access-control-connect-client-ui.html">Pulse Secure 用戶端介面</a></li><li style=""><a href="access-control-connect-client-solve-connection-issue.html">解決 Pulse Secure 用戶端連線問題</a></li><li style=""><a href="access-control-connect-client-forget-credentials.html">忘記儲存的設定</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-17 by Pulse Secure, LLC.保留所有權利</span></div></body></html>

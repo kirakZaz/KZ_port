@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = Windows WLAN 프로필 없음
+Long-desc = 사용자의 무선 네트워크 구성을 확인한 다음 다시 실행해 주십시오.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = 연결 요청 범위에 SSID 없음
+Long-desc = 사용자의 무선 네트워크 구성과 SSID 신호 강도를 확인한 다음 다시 실행해 주십시오.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = IVE 연결 실패
+Long-desc = 수동으로 연결을 재시작해 주십시오.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows가 연결 요청에 응답하지 않습니다.
+Long-desc = 네트워크 케이블이 연결되어 있지 않거나 802.1x 포트가 아닌 다른 곳(스위치)에 연결된 것이 원인인 것 같습니다. 가능한 원인을 해결한 후 수동으로 다시 연결해 주십시오.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = 무선 802.1x 네트워크 요청 실패
+Long-desc = 연결을 수작업으로 다시 시작하십시오.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows가 인증을 다시 시작합니다.
+Long-desc = Microsoft Windows 802.1x 인증 요청자가 인증을 다시 시작합니다. 연결이 곧 재개될 것입니다.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = 802.1x 무선 네트워크가 억제되고 있습니다.
+Long-desc = 관리자가 무선을 억제하도록 설정했습니다. 유효한 유선 네트워크가 감지될 때 802.1x 무선 네트워크가 억제됩니다.

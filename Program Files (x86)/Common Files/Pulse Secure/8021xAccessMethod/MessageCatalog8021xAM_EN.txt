@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = No Windows WLAN profile
+Long-desc = Verify your wireless network configuration and then try the operation again.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = No SSID(s) in range for connection request.
+Long-desc = Verify your wireless network configuration and SSID signal strength and then try the operation again.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = Server connection failed
+Long-desc = Manually restart your connection.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows didn't respond to reconnection request.
+Long-desc = Possible cause may be the network cable is unplugged or plugged into a non 802.1x port (on the switch). Please fix the possible cause and manually restart your connection.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = Wireless 802.1x network request failed
+Long-desc = Manually restart your connection.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows is restarting authentication.
+Long-desc = Microsoft Windows 802.1x supplicant is restarting authentication. Your connection should be resumed shortly.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = 802.1x wireless networks are being suppressed.
+Long-desc = Wireless suppression has been enabled by administrator. The 802.1x wireless networks are suppressed when a valid wired network is detected.

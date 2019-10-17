@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = 無 Windows WLAN 設定檔
+Long-desc = 驗證您的無線網路組態，然後再重試操作。
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = 範圍內無符合連線要求的 SSID 。
+Long-desc = 確認您的無線網路設定與 SSID 訊號強度，然後再重試操作。
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = IVE 連線失敗
+Long-desc = 手動重新啟動您的連線。
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows 未回應重新連線要求。
+Long-desc = 可能是因為網路纜線已拔除或插入非 802.1x 連接埠 (位於交換器上)。請修正可能的原因，然後手動重新啟動連線。
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = 無線 802.1x 網路要求失敗
+Long-desc = 手動重新啟動您的連線.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows 正在重新啟動驗證。
+Long-desc = Microsoft Windows 802.1x 要求者正在重新啟動驗證。您的連線應即將恢復。
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = 802.1x 無線網路已隱藏。
+Long-desc = 管理員已啟用無線隱藏。當偵測到有效的有線網路時，802.1x 無線網路便會隱藏。

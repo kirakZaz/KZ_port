@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = Skojarzenie nie powiodło się.
+Long-desc = Skojarzenie z siecią nie powiodło się.
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = Brak dostępu do Internetu.
+Long-desc = Wykrycie Internetu w sieci nie powiodło się.
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = Nieprawidłowa nazwa użytkownika lub hasło.
+Long-desc = Uwierzytelnienie w sieci nie powiodło się.
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = Uwierzytelnienie internetowe nie powiodło się.
+Long-desc = Upłynął limit czasu na zalogowanie do sieci w przeglądarce lub logowanie nie powiodło się.
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = Nieprawidłowy certyfikat.
+Long-desc = Poświadczenie certyfikatu jest nieprawidłowe lub niedostępne.
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = Sieć została pominięta.
+Long-desc = Zgodnie z zasadami dostęp do sieci został zablokowany, a zostało nawiązane połączenie z siecią o wyższym priorytecie.
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = Automatyczne nawiązywanie połączenia w toku ...
+Long-desc = Próba automatycznego połączenia z siecią na podstawie ustawień konfiguracyjnych.
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = Anulowanie połączenia ...
+Long-desc = Anulowanie próby połączenia z siecią.
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = Wykryto nośnik.
+Long-desc = Wykryto nośnik sieci fizycznej.
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = Łączenie z nośnikiem ...
+Long-desc = Próba połączenia się z nośnikiem sieci fizycznej.
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = Połączono z nośnikiem.
+Long-desc = Połączono z nośnikiem sieci fizycznej.
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = Oczekiwanie na klucz sieciowy ...
+Long-desc = Oczekiwanie na wprowadzenie klucza konfiguracji sieci przez użytkownika.
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = Oczekiwanie na poświadczenia użytkownika ...
+Long-desc = Oczekiwanie na wprowadzenie poświadczeń logowania przez użytkownika.
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = Uwierzytelnianie ...
+Long-desc = Próba uwierzytelnienia poświadczeń użytkownika w sieci.
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = Ponawianie próby uwierzytelnienia ...
+Long-desc = Próba ponownego uwierzytelnienia poświadczeń użytkownika w sieci.
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = Wykrywanie miejsca ...
+Long-desc = Wykrywanie miejsca sieciowego.
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = Oczekiwanie na zgodę użytkownika ...
+Long-desc = Oczekiwanie na akceptację umowy przez użytkownika.
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = Wykrywanie Internetu ...
+Long-desc = Próba wykrycia Internetu w sieci.
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = Wylogowywanie ...
+Long-desc = Wylogowywanie użytkownika z sieci.
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = Wylogowano.
+Long-desc = Użytkownik został wylogowany z sieci.
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = Rozłączanie z nośnikiem ...
+Long-desc = Rozłączanie z nośnikiem sieci fizycznej.
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = Zapewniają nieprzerwaną łączność.
+Long-desc = Aplikacja Pulse została połączona z IVE.
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = Nieprawidłowe argumenty.
+Long-desc = Określono nieprawidłowe argumenty.
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = Błąd połączenia.
+Long-desc = Błąd połączenia.
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = Połączono, ale wystąpił błąd.
+Long-desc = Ustanowiono połączenie aplikacji Pulse, ale wystąpił błąd.
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = połączenie nie istnieje.
+Long-desc = połączenie nie istnieje.
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = Anulowano.
+Long-desc = Połączenie aplikacji Pulse zostało anulowane przez użytkownika.
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = Nieprawidłowy certyfikat klienta.
+Long-desc = Nieprawidłowy certyfikat klienta.
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = Upłynął limit czasu.
+Long-desc = Upłynął limit czasu połączenia aplikacji Pulse.
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = Połączenie użytkownika jest niedozwolone.
+Long-desc = Połączenie aplikacji Pulse nie powiodło się, połączenie użytkownika jest niedozwolone.
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = Zastąpienie zasad jest niedozwolone.
+Long-desc = Połączenie aplikacji Pulse nie powiodło się, zastąpienie zasad jest niedozwolone.
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Aplikacja Pulse nie jest uruchomiona.
+Long-desc = Aplikacja Pulse nie jest uruchomiona.
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Aplikacja Pulse została rozłączona.
+Long-desc = Aplikacja Pulse została rozłączona.
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Aplikacja Pulse została zamknięta.
+Long-desc = Aplikacja Pulse została zamknięta.
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = Połączenie zostało już nawiązane.
+Long-desc = Aplikacja Pulse jest już połączona z IVE.
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = Połączenie zostało już rozłączone.
+Long-desc = Aplikacja Pulse została już rozłączona z IVE.
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = Wstrzymano.
+Long-desc = Połączenie zostało wstrzymane.
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = Już wstrzymano.
+Long-desc = Połączenie zostało już wstrzymane.
+
+; kMsgPCLResumed
+[3024]
+Short-desc = Wznowiono.
+Long-desc = Połączenie zostało wznowione.
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = Nieprawidłowa operacja przy bieżącym stanie połączenia.
+Long-desc = Nie można wykonać operacji przy bieżącym stanie połączenia.
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = Nieoczekiwany błąd.
+Long-desc = Nieoczekiwany błąd.

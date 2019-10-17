@@ -1,0 +1,111 @@
+;++
+;
+; Copyright (c) 2007 Juniper Networks, Inc.
+;
+; Module Name:
+;
+;   JNPRVA.INF
+;
+; Abstract:
+;
+;   INF file for installing Juniper Virtual Adapter miniport driver.
+;
+;--
+[version]
+Signature="$Windows NT$"
+Class=Net
+ClassGUID={4d36e972-e325-11ce-bfc1-08002be10318}
+Provider=%Jnpr%
+DriverPackageType=PlugAndPlay
+DriverVer=10/18/2012,5.40.0.27939
+CatalogFile=jnprva.cat
+
+[ControlFlags]
+ExcludeFromSelect={FE36527A-8C07-4854-8AF7-BF40E7DF52F7}\JNPRVA
+
+[SourceDisksNames]
+1 = %DiskId1%,,,""
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[Manufacturer]
+%Jnpr% = Jnpr,NTAMD64
+
+; For Win2K
+[Jnpr]
+; Win2K not supported.
+
+; For WinXP and later
+[Jnpr.NTAMD64]
+%JnprVa.DeviceDesc%    = JnprVa.Ndi, {FE36527A-8C07-4854-8AF7-BF40E7DF52F7}\JNPRVA
+
+
+;-------------------------------------------------------------------------------
+; Juniper Networks Virtual Adapter
+;
+[JnprVa.Ndi]
+Characteristics=0x0009 ; NCF_VIRTUAL | NCF_HIDDEN
+BusType         = 1
+AddReg          = JnprVa.Reg
+CopyFiles       = JnprVa.CopyFiles
+
+[JnprVa.Ndi.Services]
+AddService      = jnprva, %SPSVCINST_ASSOCSERVICE%, JnprVa.Service, JnprVa.EventLog
+
+;-----------------------------------------------------------------------------
+; Juniper Networks Virtual Miniport Common
+;
+[JnprVa.Reg]
+HKR,    ,                         BusNumber,           0, "0"
+HKR, Ndi,                         Service,             0, "jnprva"
+HKR, Ndi\Interfaces,              UpperRange,          0, "ndis5"
+HKR, Ndi\Interfaces,              LowerRange,          0, "ethernet"
+
+;-----------------------------------------------------------------------------
+; DestinationDirs
+;
+[DestinationDirs]
+JnprVa.CopyFiles = 12
+
+[JnprVa.CopyFiles]
+jnprva.sys,,,2
+
+[SourceDisksFiles]
+jnprva.sys = 1,,
+
+;-----------------------------------------------------------------------------
+; Driver and Service Section
+;
+
+[JnprVa.Service]
+DisplayName     = %JnprVa.Service.DispName%
+ServiceType     = 1 ;%SERVICE_KERNEL_DRIVER%
+StartType       = 3 ;%SERVICE_DEMAND_START%
+ErrorControl    = 1 ;%SERVICE_ERROR_NORMAL%
+ServiceBinary   = %12%\jnprva.sys
+LoadOrderGroup  = NDIS
+AddReg          = TextModeFlags.Reg
+
+[JnprVa.EventLog]
+AddReg = JnprVa.AddEventLog.Reg
+
+[JnprVa.AddEventLog.Reg]
+HKR, , EventMessageFile, 0x00020000, "%%SystemRoot%%\System32\netevent.dll"
+HKR, , TypesSupported,   0x00010001, 7
+
+[TextModeFlags.Reg]
+HKR, , TextModeFlags,    0x00010001, 0x0001
+
+;-----------------------------------------------------------------------------
+; Localizable Strings
+;
+[Strings]
+Jnpr						= "Juniper Networks"
+DiskId1						= "Juniper Networks Virtual Adapter Device Installation Disk #1"
+
+JnprVa.DeviceDesc			= "Juniper Networks Virtual Adapter"
+JnprVa.Service.DispName		= "Juniper Networks Virtual Adapter Service"
+
+SPSVCINST_ASSOCSERVICE		= 0x00000002
+

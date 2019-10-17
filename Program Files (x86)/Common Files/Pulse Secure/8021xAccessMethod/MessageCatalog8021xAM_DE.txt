@@ -1,0 +1,36 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+; kMsg8021xAMErrNoWindowsProfile
+[1500]
+Short-desc = Kein Windows-WLAN-Profil
+Long-desc = Überprüfen Sie die Konfiguration Ihres Wireless-Netzwerks, und versuchen Sie es noch einmal.
+
+; kMsg8021xAMErrNoSSID
+[1501]
+Short-desc = Keine SSID(s) in Reichweite für die Verbindungsanfrage.
+Long-desc = Überprüfen Sie die Konfiguration für die Wireless-Verbindung und die Stärke des SSID-Signals, und versuchen Sie es dann erneut.
+
+; kMsg8021xAMErrIVEFailed
+[1502]
+Short-desc = IVE-Verbindungfehler
+Long-desc = Starten Sie die Verbindung manuell neu.
+
+; kMsg8021xAMErrReconnectFailed
+[1503]
+Short-desc = Windows reagiert nicht auf die Verbindungsanfrage.
+Long-desc = Mögliche Ursache ist ein Netzkabel, das getrennt oder in einen anderen Port (oder Switch) als 802.1x eingesteckt ist. Beheben Sie die mögliche Ursache, und starten Sie den Computer manuell neu.
+
+; kMsg8021xAMErrWirelessFailed
+[1504]
+Short-desc = Wireless 902.1x-Netzwerkanfrage fehlgeschlagen
+Long-desc = Starten Sie die Verbindung manuell neu.
+
+; kMsg8021xAMErrTerminated
+[1505]
+Short-desc = Microsoft Windows startet die Authentifizierung neu.
+Long-desc = Microsoft Windows 802.1x-Anfragesteller startet die Authentifizierung neu. Ihre Verbindung sollte in Kürze wieder aufgenommen werden.
+
+; kMsg8021xAMErrWirelessSuppression
+[1506]
+Short-desc = Wireless 802.1x-Netzwerke werden unterdrückt.
+Long-desc = Wireless-Unterdrückung wurde vom Administrator aktiviert. Die Wireless 802.1x-Netzwerke werden unterdrückt. wenn ein gültiges, drahtgebundenes Netzwerk erkannt wurde.

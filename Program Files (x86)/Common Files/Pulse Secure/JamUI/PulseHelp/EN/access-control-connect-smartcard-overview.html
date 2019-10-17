@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>Authentication Methods</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Title" id="jd0e451">Authentication Methods</h1><div style=""><p class="Para1">Your Pulse Secure client administrator can configure a Pulse Secure client connection
+to use any of the following authentication methods:</p></div><ul><li style=""><p class="Para1"><strong>Time-based One-Time Password (TOTP)</strong>—Time-based One-Time Password (TOTP) is an algorithm that uses a <strong>shared secret key</strong> and the <strong>current time</strong> to compute a password (that is, a token) that can be used only once and that expires after a short period.  The Pulse Secure desktop client and the Pulse Connect Secure (PCS) 8.2R5 gateway support Google’s TOTP authentication server (Google Authenticator).</p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">Google Authenticator can be configured only as a secondary authentication server.</p></td></tr></table></div><p class="Para1">End users must register with a TOTP server before this authentication type can be used.  Generally, registration involves connecting to the TOTP authentication server (example, the PCS gateway) with a web browser, passing a primary authentication, and accessing a TOTP registration key, QR code and backup codes. After a user scans the QR code or manually enters a registration key with the Google Authenticator app on a mobile device, a 6-digit token will be generated every 30 seconds by the app for that user. These tokens can be entered in the Pulse desktop client for TOTP authentication.</p>
+</li><li style=""><strong>Token authentication</strong>—RSA SecurID token
+authentication, also called two-factor authentication, generates credentials
+that are difficult to compromise. A token code is generated simultaneously
+on both the client and server. You create a personal identification
+number (PIN), and then the username and the PIN plus the current token code permit you to log
+into the server. A PIN plus a token code forms a passcode. A token code expires
+after a short interval and is then replaced by a newly generated token
+code. The first time you use the system, Pulse Secure client prompts you to create
+a PIN. If your administrator has provided a PIN, you are prompted
+to change it. If your administrator requires you to change your PIN
+periodically, Pulse Secure client prompts you for a new PIN. Typically, you must
+provide the current token code when you change your PIN. In some cases,
+after entering your passcode, you are prompted to enter the next token
+code before you can access the network. Just wait until your token
+device displays a new token code, and then enter that number to proceed.<p class="Para1">The device or software that generates the token is called an
+authenticator. Pulse Secure client supports the full range of SecurID hardware and
+software authenticators. Hardware (physical) authenticators
+display a new token code every 60 seconds. You must have the card
+or key fob that generates the token with you when you log in. At the
+Pulse Secure client login window, you provide your username and your PIN plus the
+current token code. A USB authenticator can store your Windows username/password
+credentials and digital certificates. When the device is connected
+to your computer, it enables automatic token code entry and Pulse Secure client
+automatically accesses token codes directly off the device after you
+provide your PIN.</p><p class="Para1">Software authenticators
+include smartphone apps, software for desktop and laptop computers,
+and browser-based applications. Your Pulse Secure client log in procedure with a
+software authenticator depends on how your security administrator
+has configured the system. Typically, if you have the SecurID software
+installed on your endpoint, Pulse Secure client interacts with the software to retrieve
+the token code after you provide your PIN. </p></li><li style=""><p class="Para1"><strong>Smart card authentication</strong>—A smart card
+is a plastic card that includes embedded user authentication information.
+If your environment is configured with multiple digital certificates,
+Pulse Secure client prompts you to select one. Typically, if you have a smart card
+reader configured on your endpoint, Pulse Secure client interacts with the smart
+card software to retrieve the token code after you provide your PIN. </p></li><li style=""><strong>Machine authentication</strong>—Machine authentication
+uses machine credentials to authenticate the endpoint. The credentials
+are generated by Active Directory when the machine joins a domain.
+The endpoint must be a member of a Windows domain. Depending on how
+your administrator has configured the authentication process, you
+might be prompted for your Windows credentials. </li><li style=""><p class="Para1"><strong>Credential provider</strong>—Pulse Secure client credential
+provider integration enables connectivity to a network that is required
+for you to log in to the Windows domain. For example, the Windows
+domain controller might reside behind a firewall, and Pulse Secure client uses credential
+provider login to connect to a Pulse Secure client server prior to domain login.
+Pulse Secure client integrates with Microsoft credential providers to enable
+password-based login and smart card login. A credential provider interface
+appears as a tile on a Windows Vista, Windows 7, or Windows 8 login
+screen. The Pulse Secure client connection may be configured so that Pulse Secure client prompts
+are presented during the login process, for example, prompts for realm
+or role selection. Pulse Secure client upgrade notifications and actions are disabled
+during credential provider login and postponed until the connection
+is established. </p></li></ul><h4 class="Head4" id="jd0e532">Related Documentation</h4><ul><li style=""><a href="access-control-connect-client-configuration-overview.html">Pulse Secure Client Configuration Overview</a></li><li style=""><a href="access-control-delete-client-connection-status.html">Pulse Secure Client Connection Status</a></li></ul></div><div class="footer"><span class="footerleft">
+						© 2014-17 by Pulse Secure, LLC. 
+							All rights reserved</span></div></body></html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>驗證方法</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Title" id="jd0e451">驗證方法</h1><div style=""><p class="Para1">您的 Pulse Secure 用戶端管理員可設定 Pulse Secure 用戶端連線，以使用下列任一種驗證方法：</p></div><ul><li style=""><p class="Para1"><strong>時效性單次密碼 (TOTP)</strong> - 時效性單次密碼 (TOTP) 是一種演算法，藉由一組<strong>共享金鑰</strong>與<strong>目前時間</strong>，即可運算出密碼 (即符記)，密碼僅能使用一次，並且會在短期內失效。Pulse Secure 桌面用戶端和 Pulse Connect Secure (PCS) 8.2R5 閘道支援 Google 的 TOTP 驗證伺服器 (Google Authenticator)。</p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">Google Authenticator 只能設定為次要驗證伺服器。</p></td></tr></table></div><p class="Para1">一般使用者必須先註冊 TOTP 伺服器，才能使用此驗證類型。一般而言，註冊程序包含透過網頁瀏覽器連線至 TOTP 驗證伺服器 (如 PCS 閘道)、通過主要驗證，並且存取 TOTP 註冊金鑰、QR 條碼和備份碼。當使用者在行動裝置上以 Google Authenticator 應用程式掃描 QR 條碼或手動輸入註冊金鑰後，應用程式會每 30 秒為該使用者產生一組 6 位數的符記。這些符記可以輸入 Pulse 桌面用戶端，作為 TOTP 驗證。</p>
+</li><li style=""><strong>符記驗證</strong> - RSA SecurID 符記驗證，亦稱為雙因素驗證，可產生難以破解的驗證資料。符記代碼會在用戶端與伺服器兩者上產生。您可建立個人識別號碼 (PIN)，之後以使用者名稱與 PIN 加上當時的符記代碼即可讓您登入伺服器。PIN 後面加上符記代碼即形成密碼。符記代碼會在短暫的時間間隔後過期，然後被新產生的符記代碼取代。第一次使用系統時，Pulse Secure 用戶端會提示您建立 PIN。如果管理員已經提供 PIN，則系統會提示您加以變更。如果管理員要求您定期變更 PIN，Pulse Secure 用戶端會提示您輸入新的 PIN。一般而言，您必須在變更 PIN 時提供當時的符記代碼。在某些情況下，輸入密碼後，系統會提示您輸入下一個符記代碼，然後您才能存取網路。只要等到符記裝置顯示新的符記代碼，然後輸入該號碼就能繼續。<p class="Para1">產生符記的裝置或軟體稱為驗證器。Pulse Secure 用戶端支援各種 SecurID 硬體與軟體驗證器。硬體 (實體) 驗證器每 60 秒即會顯示一個新的符記代碼。登入時，您手邊必須要有能產生符記的卡片或金鑰包。請在 Pulse Secure 用戶端登入視窗中，提供您的使用者名稱、PIN 以及目前的符記代碼。USB 驗證器可儲存 Windows 使用者名稱/密碼驗證資料與數位認證。該裝置連接到您的電腦時，會啟用自動符記代碼輸入，而 Pulse Secure 用戶端可在您提供 PIN 後，自動從裝置直接存取符記代碼。</p><p class="Para1">軟體驗證器，包含智慧型手機應用程式、桌上型與筆記型電腦軟體，以及以瀏覽器為基礎的應用程式。使用軟體驗證器的 Pulse Secure 用戶端登入程序會依據安全性管理員設定系統的方式而有所不同。一般而言，如果您已在端點上安裝了 SecurID 軟體，Pulse Secure 用戶端會在您提供 PIN 後與軟體互動，以擷取符記代碼。 </p></li><li style=""><p class="Para1"><strong>智慧卡驗證</strong> - 智慧卡是塑膠卡片，包含內嵌式使用者驗證資訊。如果您的環境已提供多種數位認證設定，則 Pulse Secure 用戶端會提示您選取其中一個。一般而言，如果您已在端點上設定了智慧卡讀取器，Pulse Secure 用戶端會在您提供 PIN 後與智慧卡軟體互動，以擷取符記代碼。 </p></li><li style=""><strong>機器驗證</strong> - 機器驗證會使用機器驗證資料來驗證端點。驗證資料是在機器加入網域時由 Active Directory 所產生的。端點必須是 Windows 網域的成員。根據您管理員設定驗證程序的方式，系統可能會提示您提供 Windows 驗證資料。 </li><li style=""><p class="Para1"><strong>驗證資料提供者</strong> - Pulse Secure 用戶端驗證資料提供者整合功能可建立您登入 Windows 網域所需的網路連線。例如，Windows 網域控制站可能是位於防火牆後，而 Pulse Secure 用戶端可使用驗證資料提供者登入資訊連線至 Pulse Secure 用戶端伺服器，然後再進行網域登入。Pulse Secure 用戶端能與 Microsoft 驗證資料提供者整合，實現以密碼為基礎的登入方式與智慧卡登入方式。驗證資料提供者介面在 Windows Vista、Windows 7 或 Windows 8 登入畫面上會顯示為方格。Pulse Secure 用戶端連線可以設定為讓 Pulse Secure 用戶端提示在登入程序期間出現，例如，要求您選擇領域或角色的提示。Pulse Secure 用戶端升級通知與動作在驗證資料提供者登入期間會遭到停用，並延遲到連線建立為止。 </p></li></ul><h4 class="Head4" id="jd0e532">相關文件</h4><ul><li style=""><a href="access-control-connect-client-configuration-overview.html">Pulse Secure 用戶端設定綜述</a></li><li style=""><a href="access-control-delete-client-connection-status.html">Pulse Secure 用戶端連線狀態</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-17 by Pulse Secure, LLC.保留所有權利</span></div></body></html>

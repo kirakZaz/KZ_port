@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>使用 Pulse Secure 用戶端系統匣圖示並檢視連線狀態</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Head1Split" id="jd0e1650">使用 Pulse Secure 用戶端系統匣圖示並檢視連線狀態</h1><p class="Para1">Pulse Secure 用戶端系統匣圖示可指出網路連線的目前狀態。您只會在系統匣中看到一個連線圖示，即使目前有多個連線也是如此。有任何作用中的連線發生問題時，系統匣圖示便會變更其狀態。下列圖示代表連線狀態。</p><div style="width:100%;margin: 15px 0 15px 0;"><table cellspacing="0" border="0" width="99%"><colgroup><col width="37.00px"/><col/></colgroup><tbody><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033411.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">無連線。</p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033410.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">正在連線。連線會維持此狀態，直到失敗或成功。</p></td></tr><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033468.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已暫停。</p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033409.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已連線，但發生問題。</p></td></tr><tr valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033413.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">連線失敗。 </p></td></tr><tr class="row-with-bg" valign="top"><td align="left" style="padding-left: 10px;"><div class="graphic"><img alt="" src="g033408.gif" width="28" height="28"/></div></td><td align="left" style="padding-left: 10px;"><p class="Para1">已連線。</p></td></tr><tr valign="top"><td align="left" style="text-align: left;padding-right: 10px;padding-left: 10px;"><p class="Para1"><span class="graphic"><img alt="" src="g033433.gif" width="28" height="28"/></span></p></td><td align="left" style="text-align: left;padding-right: 10px;padding-left: 10px;"><p class="Para1">已連線到區域網路，但沒有網際網路存取。公共 WiFi 位置通常會部署網頁驗證入口，要求使用者輸入驗證資訊或接受服務條款，才授予網路存取權。Pulse Secure 用戶端會偵測到網頁驗證入口的存在，而且在獲授予網際網路存取權限之前，不會初始化與 Pulse Secure 用戶端伺服器的連線。</p></td></tr></tbody></table></div><div style=""><p class="Para1">您也可以使用 Pulse Secure 用戶端系統匣圖示執行下列動作： </p></div><ul><li style=""><strong>開啟 Pulse Secure 用戶端</strong> - 顯示 Pulse Secure 用戶端介面。</li><li style=""><strong>Pulse Secure 用戶端 Collaboration</strong> - 存取 Pulse Secure 用戶端 Collaboration Suite 會議功能。只有在 Pulse Secure 用戶端管理員已啟用 Pulse Secure 用戶端 Collaboration 時，此項目才會出現。 </li><li style=""><strong>連線清單</strong> - 列出每個 Pulse Secure 用戶端連線。按一下連線名稱，會顯示可對該連線執行的動作： <ul><li style=""><strong>連線</strong> - 初始化連線。</li><li style=""><strong>中斷連線</strong> - 中斷所選網路連線。</li><li style=""><strong>取消</strong> - 取消 Pulse Secure 用戶端伺服器已初始化的動作。若伺服器已初始化主機檢查器操作，[取消] 選項便可使用。如果您取消，Pulse Secure 用戶端便不會連線至網路。</li><li style=""><strong>暫停</strong> - 暫停 VPN 連線以允許存取區域網路資源。請注意，如果您在有作用中的連線時，選擇 [忘記儲存的設定]，則此選項無法使用。</li><li style=""><strong>恢復</strong> - 恢復已暫停的 VPN 連線。</li><li style=""><strong>延長工作階段</strong> - 不等候 Pulse Secure 用戶端通知您有工作階段即將到期，而延長作用中的連線工作階段。您可以隨時選取此選項，將工作階段及閒置的計時器重設為最大值。 </li></ul></li><li style=""><strong>退出</strong> - 關閉 Pulse Secure 用戶端並中斷任何作用中的連線。</li></ul><h4 class="Head4" id="jd0e1805">相關文件</h4><ul><li style=""><a href="access-control-connect-client-ui.html">Pulse Secure 用戶端介面</a></li><li style=""><a href="access-control-connect-client-extend.html">延長連線工作階段</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-17 by Pulse Secure, LLC.保留所有權利</span></div></body></html>

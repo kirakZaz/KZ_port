@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = Die Zuordnung ist fehlgeschlagen.
+Long-desc = Die Zuordnung zum Netzwerk ist fehlgeschlagen.
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = Kein Internetzugang.
+Long-desc = Die Interneterkennung im Netzwerk ist fehlgeschlagen.
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = Benutzername oder Kennwort ungültig.
+Long-desc = Die Authentifizierung zum Netzwerk ist fehlgeschlagen.
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = Fehler bei der webbasierten Authentifizierung.
+Long-desc = Die Browseranmeldung am Netzwerk ist fehlgeschlagen, oder das Zeitlimit wurde überschritten.
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = Das Zertifikat ist ungültig.
+Long-desc = Die Zertifikatanmeldeinformationen sind ungültig oder nicht verfügbar.
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = Netzwerk wird unterdrückt.
+Long-desc = Der Zugriff auf das Netzwerk wird durch eine Richtlinie blockiert, während ein Netzwerk mit höherer Priorität verbunden ist.
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = Die Verbindung wird automatisch hergestellt...
+Long-desc = Das Netzwerk versucht, basierend auf den Konfigurationseinstellungen automatisch eine Verbindung herzustellen.
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = Die Verbindung wird abgebrochen...
+Long-desc = Der Versuch, eine Netzwerkverbindung herzustellen wird abgebrochen.
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = Medium wurde erkannt.
+Long-desc = Das physische Netzwerkmedium wurde erkannt.
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = Die Verbindung zum Medium wird hergestellt...
+Long-desc = Es wird versucht, eine Verbindung zum physischen Netzwerkmedium herzustellen.
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = Die Verbindung zum Medium wurde hergestellt.
+Long-desc = Die Verbindung zum physischen Netzwerkmedium wurde hergestellt.
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = Die Eingabe des Netzwerkschlüssels wird erwartet...
+Long-desc = Das System wartet auf die Eingabe des Netzwerkkonfigurationsschlüssels durch den Benutzer.
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = Die Eingabe der Anmeldeinformationen wird erwartet...
+Long-desc = Die Eingabe der Anmeldeinformationen durch den Benutzer wird erwartet.
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = Authentifizierung erfolgt...
+Long-desc = Es wird versucht, die Benutzerinformationen mit dem Netzwerk zu authentifizieren.
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = Erneuter Authentifizierungsversuch...
+Long-desc = Es wird erneut versucht, die Benutzerinformationen mit dem Netzwerk zu authentifizieren.
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = Ort wird erkannt...
+Long-desc = Der Netzwerkort wird erkannt.
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = Warte auf Benutzereinwilligung...
+Long-desc = Das System wartet auf die Einwilligung des Benutzers zu einer Vereinbarung.
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = Internet wird erkannt...
+Long-desc = Das System versucht, im Netzwerk das Internet zu erkennen.
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = Abmeldung erfolgt...
+Long-desc = Der Benutzer wird im Netzwerk abgemeldet.
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = Abgemeldet.
+Long-desc = Der Benutzer wurde im Netzwerk abgemeldet.
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = Verbindung zum Medium wird getrennt...
+Long-desc = Die Verbindung zum physischen Netzwerkmedium wird getrennt.
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = Verbunden.
+Long-desc = Pulse ist mit IVE verbunden.
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = Ungültige Argumente.
+Long-desc = Ungültige Argumente wurden angegeben.
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = Verbindungsfehler.
+Long-desc = Verbindungsfehler.
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = Verbunden mit Fehler.
+Long-desc = Pulse-Verbindung mit Fehler hergestellt.
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = Verbindung nicht vorhanden.
+Long-desc = Verbindung nicht vorhanden.
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = Abgebrochen.
+Long-desc = Pulse-Verbindung von Benutzer abgebrochen.
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = Ungültiges Client-Zertifikat.
+Long-desc = Ungültiges Client-Zertifikat.
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = Zeitüberschreitung.
+Long-desc = Zeitüberschreitung für Pulse-Verbindung.
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = Benutzerverbindung nicht zulässig.
+Long-desc = Fehler bei Pulse-Verbindung. Benutzerverbindung nicht zulässig.
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = Aufhebung der Richtlinie nicht zulässig.
+Long-desc = Fehler bei Pulse-Verbindung. Aufhebung der Richtlinie nicht zulässig.
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Pulse wird nicht ausgeführt.
+Long-desc = Pulse wird nicht ausgeführt.
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Pulse nicht verbunden.
+Long-desc = Pulse nicht verbunden.
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Pulse wurde beendet.
+Long-desc = Pulse wurde beendet.
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = Bereits verbunden.
+Long-desc = Pulse ist bereits mit IVE verbunden.
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = Verbindung bereits getrennt.
+Long-desc = Pulse ist bereits von IVE getrennt.
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = Unterbrochen.
+Long-desc = Die Verbindung wurde unterbrochen.
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = Bereits unterbrochen.
+Long-desc = Die Verbindung ist bereits unterbrochen.
+
+; kMsgPCLResumed
+[3024]
+Short-desc = Wiederhergestellt.
+Long-desc = Die Verbindung wurde wiederhergestellt.
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = Ungültiger Vorgang für aktuellen Verbindungsstatus.
+Long-desc = Der Vorgang kann beim aktuellen Verbindungsstatus nicht ausgeführt werden.
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = Unerwarteter Fehler.
+Long-desc = Unerwarteter Fehler.

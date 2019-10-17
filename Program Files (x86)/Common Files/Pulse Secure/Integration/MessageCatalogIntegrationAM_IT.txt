@@ -1,0 +1,220 @@
+﻿; JUNS catalogUtil requires catalog message files to be saved with UTF-8 encoding, which put 3 bytes {0xEF, 0xBB, 0xBF} at the file beginning called Byte Order Mark (BOM) for UTF-8 files . For modifications in this files, please use Text Editors which persist these BOM bytes (like Notepad.exe, Visual Studio IDE, etc).
+
+;
+; PulseNetworkStateError messages.
+;
+
+; kMsgIntegrationAMStatusNone
+[1900]
+Short-desc =
+Long-desc =
+
+; kMsgIntegrationAMStatusLinkFailure
+[1901]
+Short-desc = Associazione non riuscita.
+Long-desc = Associazione alla rete non riuscita.
+
+; kMsgIntegrationAMStatusInternetFailure
+[1902]
+Short-desc = Nessun accesso a Internet.
+Long-desc = Rilevamento Internet nella rete non riuscito.
+
+; kMsgIntegrationAMStatusAuthFailure
+[1903]
+Short-desc = Nome utente o password non valida.
+Long-desc = Autenticazione alla rete non riuscita.
+
+; kMsgIntegrationAMStatusCaptivePortalFailure
+[1904]
+Short-desc = Errore di autenticazione basata su Web.
+Long-desc = L'accesso basato su browser alla rete è scaduto o non è riuscito.
+
+; kMsgIntegrationAMStatusCertificateError
+[1905]
+Short-desc = Certificato non valido.
+Long-desc = Le credenziali del certificato non sono valide o disponibili.
+
+; kMsgIntegrationAMStatusSuppressed
+[1906]
+Short-desc = Rete eliminata.
+Long-desc = L'accesso alla rete è bloccato da criteri mentre è connessa una rete a priorità più alta.
+
+;
+; Detailed connection status messages.
+;
+
+; kMsgIntegrationAMStatusAutoConnect
+[1950]
+Short-desc = Connessione automatica in corso...
+Long-desc = La rete tanta di connettersi automaticamente in base alle impostazioni di configurazione.
+
+; kMsgIntegrationAMStatusCancellingConnect
+[1951]
+Short-desc = Annullamento connessione in corso...
+Long-desc = È in corso l'annullamento del tentativo di connessione alla rete.
+
+; kMsgIntegrationAMStatusLinkSensed
+[1952]
+Short-desc = Supporto rilevato.
+Long-desc = È stato rilevato il supporto di rete fisico.
+
+; kMsgIntegrationAMStatusLinkConnecting
+[1953]
+Short-desc = Connessione al supporto in corso...
+Long-desc = È in corso il tentativo di connessione al supporto di rete fisico.
+
+; kMsgIntegrationAMStatusLinkConnected
+[1954]
+Short-desc = Connesso al supporto.
+Long-desc = Connessione stabilita al supporto di rete fisico.
+
+; kMsgIntegrationAMStatusWaitingForKey
+[1955]
+Short-desc = In attesa della chiave di rete...
+Long-desc = In attesa di immissione della chiave di configurazione di rete da parte dell'utente.
+
+; kMsgIntegrationAMStatusWaitingForCredentials
+[1956]
+Short-desc = In attesa delle credenziali utente...
+Long-desc = In attesa di immissione delle credenziali di accesso da parte dell'utente.
+
+; kMsgIntegrationAMStatusAuthenticating
+[1957]
+Short-desc = Autenticazione in corso...
+Long-desc = È in corso il tentativo di autenticazione delle credenziali utente con la rete.
+
+; kMsgIntegrationAMStatusReauthenticating
+[1958]
+Short-desc = Recupero autenticazione in corso...
+Long-desc = È in corso un nuovo tentativo di autenticazione delle credenziali utente con la rete.
+
+; kMsgIntegrationAMStatusDetectingVenue
+[1959]
+Short-desc = Rilevamento luogo in corso...
+Long-desc = È in corso il rilevamento di un luogo di rete.
+
+; kMsgIntegrationAMStatusWaitingForUserConsent
+[1960]
+Short-desc = In attesa del consenso dell'utente...
+Long-desc = In attesa che l'utente accetti un accordo consensuale.
+
+; kMsgIntegrationAMStatusDetectingInternet
+[1961]
+Short-desc = Rilevamento Internet in corso...
+Long-desc = È in corso il tentativo di rilevamento Internet nella rete.
+
+; kMsgIntegrationAMStatusLoggingOff
+[1962]
+Short-desc = Disconnessione in corso...
+Long-desc = È in corso la disconnessione dell'utente dalla rete.
+
+; kMsgIntegrationAMStatusLoggedOff
+[1963]
+Short-desc = Disconnessione riuscita.
+Long-desc = L'utente si è disconnesso dalla rete.
+
+; kMsgIntegrationAMStatusLinkDisconnecting
+[1964]
+Short-desc = Disconnessione dal supporto in corso...
+Long-desc = È in corso la disconnessione dal supporto di rete fisico.
+
+; kMsgPCLConnected            
+[3000]
+Short-desc = Connessione riuscita.
+Long-desc = Connessione di Pulse ad IVE riuscita.
+
+; kMsgPCLInvalidParameter
+[3001]
+Short-desc = Argomenti non validi.
+Long-desc = Sono stati specificati argomenti non validi.
+
+
+; kMsgPCLConnectError  
+[3002]
+Short-desc = Errore di connessione.
+Long-desc = Errore di connessione.
+       
+; kMsgPCLConnectedWithError   
+[3003]
+Short-desc = Connessione riuscita con un errore.
+Long-desc = Connessione Pulse stabilita con un errore.
+
+; kMsgPCLConnectedNotExist    
+[3004]
+Short-desc = connessione inesistente.
+Long-desc = connessione inesistente.
+
+; kMsgPCLCancelled            
+[3005]
+Short-desc = Operazione annullata.
+Long-desc = Connessione Pulse annullata dall'utente.
+
+; kMsgPCLCertError            
+[3006]
+Short-desc = Certificato client non valido.
+Long-desc = Certificato client non valido.
+
+; kMsgPCLTimeout              
+[3007]
+Short-desc = Operazione scaduta.
+Long-desc = Connessione Pulse scaduta.
+
+; kMsgPCLNoUserConnection     
+[3008]
+Short-desc = Connessione utente non consentita.
+Long-desc = Connessione Pulse non riuscita, connessione utente non consentita.
+
+; kMsgPCLNoPolicyOverride     
+[3009]
+Short-desc = Override criteri non consentito.
+Long-desc = Connessione Pulse non riuscita, override criteri non consentito.
+
+; kMsgPCLNotRunning           
+[3010]
+Short-desc = Pulse non in esecuzione.
+Long-desc = Pulse non in esecuzione.
+
+; kMsgPCLDisconnected         
+[3011]
+Short-desc = Disconnessione Pulse riuscita.
+Long-desc = Disconnessione Pulse riuscita.
+
+; kMsgPCLExited               
+[3012]
+Short-desc = Chiusura di Pulse riuscita.
+Long-desc = Chiusura di Pulse riuscita.
+
+; kMsgPCLAlreadyConnected     
+[3020]
+Short-desc = Connessione già eseguita.
+Long-desc = Pulse è già connesso ad IVE.
+
+; kMsgPCLAlreadyDisconnected  
+[3021]
+Short-desc = Disconnessione già eseguita.
+Long-desc = Pulse è già disconnesso da IVE.
+
+; kMsgPCLSuspended
+[3022]
+Short-desc = Sospesa.
+Long-desc = La connessione è stata sospesa.
+
+; kMsgPCLAlreadySuspended         
+[3023]
+Short-desc = Già sospesa.
+Long-desc = La connessione è già sospesa.
+
+; kMsgPCLResumed
+[3024]
+Short-desc = Ripresa.
+Long-desc = La connessione è stata ripresa.
+
+; kMsgPCLInvalidActionForConnState         
+[3025]
+Short-desc = Operazione non valida per lo stato di connessione attuale.
+Long-desc = Impossibile eseguire l'operazione durante lo stato di connessione attuale.
+
+; kMsgPCLGenericError         
+[3100]
+Short-desc = Errore imprevisto.
+Long-desc = Errore imprevisto.

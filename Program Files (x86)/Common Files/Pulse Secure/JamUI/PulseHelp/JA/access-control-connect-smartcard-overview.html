@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US"><head><title>認証方法</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><link rel="stylesheet" media="screen" type="text/css" href="bookstyle.css"/><link rel="stylesheet" media="screen" type="text/css" href="standard.css"/><link rel="stylesheet" media="print" type="text/css" href="print.css"/>
+					
+						<script type="text/javascript" src="book-utils.js"></script>
+						<script type="text/javascript" src="help-utils.js"></script>
+						<script type="text/javascript">
+							if (parent.location.href == self.location.href){
+								var url = self.location.href;
+								var file = url.substring(url.lastIndexOf('/')+1);
+								window.location.href = 'help.html?' + file;
+							}
+							updateTree();
+						</script>
+					
+					<style media="screen" type="text/css">
+					html {
+						padding: 0;
+						margin: 0;
+						min-height: 100%;
+						border-left:solid 3px #736F6E;
+					}
+				</style></head><body style="width:98%;" onload="setHTMLHeight();highlightResults();"><div id="content"><h1 class="Title" id="jd0e451">認証方法</h1><div style=""><p class="Para1">Pulse 管理者は、以下の認証方法を使用するように Pulse 接続を設定できます。</p></div><ul><li style=""><p class="Para1"><strong>Time-based One-Time Password（TOTP）</strong> &mdash; Time-based One-Time Password（TOTP）は、<strong>共有秘密鍵</strong>と<strong>現在の時刻</strong>を使用してパスワード（トークン）を計算するアルゴリズムです。このパスワードは 1 回だけ使用することができ、その有効期限は短期間で切れます。Pulse Secure デスクトップ クライアントと Pulse Connect Secure（PCS）8.2R5 ゲートウェイでは、Google の TOTP 認証サーバー（Google 認証システム）がサポートされています。</p><div style=""><table border="1" cellpadding="5" cellspacing="0" width="95%" style="text-align: left;"><tr><td style="text-align: center;"><img src="note.gif" alt=""/></td><td><p class="Para1">Google 認証システムは、セカンダリ認証サーバーとしてのみ設定できます。</p></td></tr></table></div><p class="Para1">エンド ユーザーは、この認証タイプを使用する前に、TOTP サーバーに登録する必要があります。通常、登録時には、Web ブラウザーを使用して TOTP 認証サーバー（PCS ゲートウェアなど）に接続し、プライマリ認証を渡して TOTP 登録キー、QR コード、およびバックアップコードにアクセスします。ユーザーがモバイル デバイスで Google 認証システム アプリを使用して QR コードをスキャンするか登録キーを手動で入力すると、アプリによってそのユーザー向けに 6 桁のトークンが 30 秒ごとに生成されます。このトークンは、Pulse Desktop クライアントでの TOTP 認証時に入力できます。</p>
+</li><li style=""><strong>トークン認証</strong> &mdash; RSA SecurID トークン認証は、2 要素認証とも呼ばれ、漏洩が非常に難しい認証情報を生成する方法です。トークン コードは、クライアントとサーバーの両方で同時に生成されます。ユーザー名およびユーザーが作成した PIN（個別識別番号）に現在のトークン コードを組み合わせることで、ユーザーはサーバーへのログインを許可されます。PIN とトークン コードでパスコードが構成されます。トークン コードは短期間で期限切れになり、新しく生成されたトークン コードと置き換えられます。はじめてシステムを使用するとき、PIN を作成するよう Pulse から要求があります。また、管理者が PIN を提供している場合は、それを変更するよう要求されます。管理者が PIN を定期的に変更するよう要求している場合、Pulse から新しい PIN を要求されます。通常、PIN を変更するときには、現在のトークン コードを提供しなければなりません。場合によっては、パスコードを入力した後、ネットワークにアクセスする前に、次のトークン コードを入力するよう要求されます。トークン デバイスに新しいトークン コードが表示されるまで待ち、その数字を入力して先へ進みます。<p class="Para1">トークンを生成するデバイスまたはソフトウェアは、オーセンティケーターと呼ばれます。Pulse は、SecurID のハードウェア オーセンティケーターおよびソフトウェア オーセンティケーターの全領域をサポートしています。ハードウェア（物理）オーセンティケーターには、60 秒ごとに新しいトークン コードが表示されます。ログイン時には、トークンを生成するカードまたはキーフォブが必要です。Pulse のログイン ウィンドウでは、ユーザー名、PIN、および現在のトークン コードを入力します。USB オーセンティケーターは、Windows ユーザー名/パスワード認証情報とデジタル証明書を保管できます。デバイスがご利用のコンピューターに接続されると、トークン コードの自動入力が有効になります。PIN を提供すると、Pulse Secure クライアントはデバイスを介して直接、自動的にトークン コードにアクセスします。</p><p class="Para1">ソフトウェア オーセンティケーターには、スマートフォン アプリケーション、デスクトップ PC およびノート PC 用ソフトウェア、ブラウザー ベースのアプリケーションなどがあります。ソフトウェア オーセンティケーターを使用した Pulse ログイン手順は、セキュリティ管理者のシステム設定により異なります。通常、エンドポイントに SecurID ソフトウェアをインストールしている場合、PIN を入力すると、Pulse は、ソフトウェアと通信して、トークン コードを取得します。 </p></li><li style=""><p class="Para1"><strong>スマート カード認証</strong> &mdash; スマート カードは、ユーザー認証情報が組み込まれたプラスチックカードです。ご利用の環境が複数のデジタル証明書で設定されている場合、1 つを選択するよう Pulse から要求されます。通常、エンドポイント上でスマート カード リーダーを設定している場合、PIN を入力すると、Pulse は、スマート カード ソフトウェアと通信して、トークン コードを取得します。 </p></li><li style=""><strong>マシン認証</strong> &mdash; マシン認証では、エンドポイントの認証にマシンの認証情報を使用します。認証情報は、マシンがドメインに参加すると Active Directory によって生成されます。エンドポイントは、Windows ドメインのメンバーであることが必要です。管理者が認証プロセスをどう設定したかによって、Windows の認証情報を入力するよう要求される場合があります。 </li><li style=""><p class="Para1"><strong>資格情報プロバイダ</strong> &mdash; Pulse 認証情報プロバイダ統合により、Windows ドメインにログインする際に必要なネットワークに接続できます。例えば、Windows のドメイン コントローラーがファイアウォールの内側にある場合、Pulse は、ドメインにログインする前に、資格情報プロバイダ ログインを使用して Pulse サーバーに接続します。Pulse では、Microsoft の資格情報プロバイダとの統合により、パスワードベースのログインとスマート カードによるログインを実現しています。資格情報プロバイダのインターフェイスは、Windows Vista、Windows 7、または Windows 8 のログイン画面では、タイルとして表示されます。Pulse 接続は、ログイン プロセスで Pulse プロンプトが表示されるように設定できます。例えば、レルムやロールを選択するプロンプトを表示できます。資格情報プロバイダ ログイン中、Pulse Secure クライアントのアップグレード通知と動作は無効になり、接続が確立されるまで延期されます。 </p></li></ul><h4 class="Head4" id="jd0e532">関連項目</h4><ul><li style=""><a href="access-control-connect-client-configuration-overview.html">Pulse 設定の概要</a></li><li style=""><a href="access-control-delete-client-connection-status.html">Pulse 接続ステータス</a></li></ul></div><div class="footer"><span class="footerleft">© 2014-17 by Pulse Secure, LLC.All rights reserved</span></div></body></html>
