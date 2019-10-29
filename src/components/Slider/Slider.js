@@ -1,5 +1,5 @@
 import React from 'react';
-import imgsData from '../../images.json'
+import imgsData from './images.json'
 import './style.scss'
 
 
