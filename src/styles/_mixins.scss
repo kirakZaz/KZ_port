@@ -1,0 +1,38 @@
+@import '../styles/colorsConfig';
+$lgScreen: 1601px;
+$mdScreen: 1261px;
+$smScreen: 767px;
+
+@mixin lgScreen {
+  @media (max-width: $lgScreen) {
+    @content;
+  }
+}
+
+@mixin mdScreen {
+  @media (max-width: $mdScreen) {
+    @content;
+  }
+}
+
+@mixin smScreen {
+  @media (max-width: $smScreen) {
+    @content;
+  }
+}
+
+
+@mixin listClear{
+  list-style: none;
+  padding: 0;
+}
+
+@mixin lightLink {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover{
+    color: #bababa;
+  }
+}
+

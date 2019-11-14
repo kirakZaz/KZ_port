@@ -1,0 +1,35 @@
+@mixin font-awesome-icon($type, $unicode, $size, $margin, $color, $weight) {
+  @if $type == 'before' {
+    &:before {
+      content:$unicode;
+      font-family:"FontAwesome";
+      font-size:$size;
+      color:$color;
+      font-weight:$weight;
+      margin:$margin;
+      @content;
+    }
+    &:hover{
+      &:before{
+        color: transparent;
+      }
+    }
+  }
+  @if $type == 'after'{
+    &:after {
+      content:$unicode;
+      font-family:"FontAwesome";
+      font-size:$size;
+      color:$color;
+      font-weight:$weight;
+      margin:$margin;
+      @content;
+    }
+    &:hover{
+      &:before{
+        color: transparent;
+      }
+    }
+  }
+
+}

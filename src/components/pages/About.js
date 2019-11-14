@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './style.scss'
 
 const About = () => (
@@ -20,13 +21,14 @@ const About = () => (
                 <h2>Skills</h2>
                 <div className={'skillsInn'}>
                     <div className={'skillsLang'}>
-                        <span>React</span><span> Redux</span><span> JS</span><span> Node.js</span><span> jQuery</span><span> Sass</span><span> CSS3</span><span> HTML5</span><span> Bootstrap</span><span> Media Query</span><span> W3C</span><span> Axios</span><span> Material-UI</span><span> Lodash</span><span> Moment</span><span> Yup</span><span> Local env</span>
+                        <span>React</span><span> Redux</span><span> JS</span><span> Node.js</span><span> jQuery</span><span> Sass</span><span> CSS3</span><span> HTML5</span><span> Bootstrap</span><span> Media Query</span><span> W3C</span><span> Axios</span><span> Material-UI</span><span> Lodash</span><span> Moment</span><span> Yup</span>
                     </div>
 
                     <div className={'skillsProgs'}>
                         <span>Photoshop</span><span>Illustrator</span><span>Visual studio</span><span>Dreamweaver</span><span>Webstorm</span><span>GitHub</span><span>Bitbucket</span><span>IntelliJ IDEA</span></div>
-                    <div><span>Responsive development</span><span>Flexible layouts</span><span>Debug capabilities</span></div>
-                    <div><span>Requirements gathering</span><span>Times management</span><span>Strong analytic and debug skills.</span></div>
+                    <div><span>Responsive development</span><span>Flexible layouts</span></div>
+                    <div><span>Times management</span><span>Strong analytic and debug skills.</span></div>
+                    <div><span>Little about hobbies -> <Link to="/draws">Draws</Link></span></div>
 
                 </div>
 
@@ -95,7 +97,6 @@ const About = () => (
                 </div>
             </div>
         </div>
-        <div className={'linkToGit'}>Link to project in gitHub: <a href="https://github.com/kirakZaz/KZ_port">Check my code here...</a></div>
     </div>
 );
 
