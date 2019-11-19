@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2ba9b283-eb63-4f50-bbc1-a9d667a5414b" name="Default Changelist" comment="">
+      <change afterPath="$USER_HOME$/.WebStorm2018.3/system/workspace/round-trip-test.4611851.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/round-trip-test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainPage.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/globalStyles/_colorsConfig.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/globalStyles/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/Icon/Icon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/Icon/icons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/air-france.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/calendar.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/directions.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/human.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/lufthansa.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/no-baggage.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/with-baggage.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/wizz.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$I175BMT" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$I5FD8LW" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$I9AI9V9.lnk" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$IDKVJFL" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/untitled.iml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R175BMT/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R5FD8LW/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$R9AI9V9.lnk" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.gitignore" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/.name" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/K_Z.iml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/markdown-navigator.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/README.md" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/package-lock.json" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/package.json" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/favicon.ico" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/index.html" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/logo192.png" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/logo512.png" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/manifest.json" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/public/robots.txt" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/App.css" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/App.js" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/App.test.js" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/index.css" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/index.js" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/logo.svg" beforeDir="false" />
+      <change beforePath="C:/$Recycle.Bin/S-1-5-21-1318478993-4141785018-1863163176-1001/$RDKVJFL/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="C:/Program Files (x86)/Common Files/Pulse Secure/JUNS/accessRecovery.ini" beforeDir="false" afterPath="C:/Program Files (x86)/Common Files/Pulse Secure/JUNS/accessRecovery.ini" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Dropbox/Client/Dropbox.VisualElementsManifest.xml" beforeDir="false" afterPath="C:/Program Files (x86)/Dropbox/Client/Dropbox.VisualElementsManifest.xml" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Dropbox/Client/Dropbox.exe" beforeDir="false" afterPath="C:/Program Files (x86)/Dropbox/Client/Dropbox.exe" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Dropbox/Client/DropboxExt.27.0.dll" beforeDir="false" afterPath="C:/Program Files (x86)/Dropbox/Client/DropboxExt.27.0.dll" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Dropbox/Client/DropboxUninstaller.exe" beforeDir="false" afterPath="C:/Program Files (x86)/Dropbox/Client/DropboxUninstaller.exe" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Dropbox/Client/qt.conf" beforeDir="false" afterPath="C:/Program Files (x86)/Dropbox/Client/qt.conf" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Google/Chrome/Application/chrome.VisualElementsManifest.xml" beforeDir="false" afterPath="C:/Program Files (x86)/Google/Chrome/Application/chrome.VisualElementsManifest.xml" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" beforeDir="false" afterPath="C:/Program Files (x86)/Google/Chrome/Application/chrome.exe" afterDir="false" />
+      <change beforePath="C:/Program Files (x86)/Google/Chrome/Application/chrome_proxy.exe" beforeDir="false" afterPath="C:/Program Files (x86)/Google/Chrome/Application/chrome_proxy.exe" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/30362c2a7156e98c_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/30362c2a7156e98c_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/30f24608eb8fd7c3_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/30f24608eb8fd7c3_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/31d5eb8c482c4422_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/32b52ae8b3c23a52_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/32b52ae8b3c23a52_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/32bae189fcf3efbc_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/32bae189fcf3efbc_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3a68f50f1d07486c_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3b3da422da39dbbc_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3b3da422da39dbbc_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3c000f84089abe62_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3c095f4636738481_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3c095f4636738481_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3d18b3ee039dcc60_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3ea14988399260f0_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/3ea14988399260f0_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/41453a0a23b49754_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/41453a0a23b49754_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/43344f687dc474b2_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/43e072cc2362d63e_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/43f4d3739e7d0b65_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/43f4d3739e7d0b65_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/4d441217b1ee4ef9_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/4d441217b1ee4ef9_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/50dfb8935bcca467_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/50dfb8935bcca467_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/534f6bf8e897108b_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/59dbea43963faab1_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/59dbea43963faab1_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/5a3228b76faf2a1c_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/5e8c0361f486db0d_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/5ee98d5e21525b8d_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/5ee98d5e21525b8d_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/620c099fc30df854_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/620c099fc30df854_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/629ebb18a96c99c3_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/6c7fe9b754b4a749_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/6c7fe9b754b4a749_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/6fbed7d1348c5a21_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/6fcadeeaea7b60d1_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/6fcadeeaea7b60d1_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/7059428d91767f96_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/705d4dc6eac66248_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/705d4dc6eac66248_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/70dc0b9c6e9f5b5f_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/70dc0b9c6e9f5b5f_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/751dcc90ef7af9c8_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/751dcc90ef7af9c8_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/7774af4b0e1bac34_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/78ca72662989b5f7_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/78ca72662989b5f7_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/80428ad3727c0429_0" beforeDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/806cc37b278c3da1_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/806cc37b278c3da1_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/84b41040b6be09de_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/84b41040b6be09de_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/88e71cd24f9d14e5_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/88e71cd24f9d14e5_0" afterDir="false" />
+      <change beforePath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/8d7a412db1def7bd_0" beforeDir="false" afterPath="$USER_HOME$/AppData/Local/Google/Chrome/User Data/Default/Code Cache/js/8d7a412db1def7bd_0" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+              <folding>
+                <element signature="e#279#306#0" />
+                <element signature="e#323#384#0" />
+                <element signature="e#426#483#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/globalStyles/_mixins.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainPage.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="48" column="24" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#849#933#0" />
+                <element signature="e#976#1058#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@media</find>
+      <find>media-breakpoint</find>
+      <find>peopleCount</find>
+      <find>\u017d</find>
+      <find>height: 36px;</find>
+      <find>t</find>
+      <find>mdbreact</find>
+      <find>asideTitle</find>
+      <find>currencyChange</find>
+      <find>.TopFiltering</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="C:/" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/Header/navigation.json" />
+        <option value="$PROJECT_DIR$/src/globalStyles/_colorsConfigs.scss" />
+        <option value="$PROJECT_DIR$/src/components/App.css" />
+        <option value="$PROJECT_DIR$/src/globalStyles/_colorsConfig.scss" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/helpers/Icon/Icon.js" />
+        <option value="$PROJECT_DIR$/src/helpers/Icon/icons.js" />
+        <option value="$PROJECT_DIR$/src/components/MainContent/MainContent.scss" />
+        <option value="$PROJECT_DIR$/src/components/MainContent/MainSearch.js" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainSearch.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.scss" />
+        <option value="$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.scss" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.scss" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.scss" />
+        <option value="$PROJECT_DIR$/src/data.json" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.scss" />
+        <option value="$PROJECT_DIR$/src/globalStyles/_mixins.scss" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainPage.scss" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainPage.js" />
+        <option value="$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.scss" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="5" />
+    <option name="y" value="10" />
+    <option name="width" value="1945" />
+    <option name="height" value="1105" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+              <item name="MainContent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+              <item name="MainContent" type="462c0819:PsiDirectoryNode" />
+              <item name="Aside" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+              <item name="MainContent" type="462c0819:PsiDirectoryNode" />
+              <item name="TopFltering" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="MainPage" type="462c0819:PsiDirectoryNode" />
+              <item name="MainSearch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="globalStyles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="round-trip-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="round-trip-test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="C:\kira\round-trip-test\node_modules\eslint" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\kira\round-trip-test\src\components\MainPage\MainContent\Results\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\kira\round-trip-test\src\components\MainPage\MainContent" />
+      <recent name="C:\kira\round-trip-test\src\components\MainPage\MainSearch" />
+      <recent name="C:\kira\round-trip-test\src" />
+      <recent name="C:\kira\round-trip-test\src\components" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2ba9b283-eb63-4f50-bbc1-a9d667a5414b" name="Default Changelist" comment="" />
+      <created>1573758852656</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573758852656</updated>
+      <workItem from="1573758854105" duration="60165000" />
+      <workItem from="1574095480361" duration="26146000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="86311000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43226787" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50033003" side_tool="true" weight="0.47031963" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49966997" visible="true" weight="0.03805175" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/logo.svg" />
+    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
+    <entry file="file://$PROJECT_DIR$/src/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/logo192.png" />
+    <entry file="file://$PROJECT_DIR$/public/logo512.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/robots.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_screen-reader.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-273" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_size.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_breakpoints.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="105" column="59" selection-start-line="105" selection-start-column="51" selection-end-line="105" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_grid-framework.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/mixins/_grid.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/scss/bootstrap-grid.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="7" column="117" selection-start-line="7" selection-start-column="117" selection-end-line="7" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/Icon/icons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/Icon/Icon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="133" column="26" selection-start-line="133" selection-start-column="26" selection-end-line="133" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/globalStyles/_colorsConfig.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers/RangeSlider/RangeSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding>
+            <element signature="e#279#306#0" />
+            <element signature="e#323#384#0" />
+            <element signature="e#426#483#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Aside/Aside.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/globalStyles/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/TopFltering/TopFiltering.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainSearch/MainSearch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#849#933#0" />
+            <element signature="e#976#1058#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainPage.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="64" selection-start-line="15" selection-start-column="64" selection-end-line="15" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/MainPage/MainContent/Results/Results.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

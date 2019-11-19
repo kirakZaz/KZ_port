@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FUSProjectUsageTrigger">
+    <session id="328645183">
+      <usages-collector id="statistics.lifecycle.project">
+        <usage id="project.opened" value="2" />
+        <usage id="project.open.time.1" value="1" />
+        <usage id="project.closed" value="1" />
+        <usage id="project.open.time.2" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <usage id="Markdown" value="1" />
+        <usage id="PLAIN_TEXT" value="2" />
+        <usage id="SVG" value="1" />
+        <usage id="JavaScript" value="32" />
+        <usage id="JSON" value="12" />
+        <usage id="CSS" value="2" />
+        <usage id="HTML" value="3" />
+        <usage id="Image" value="3" />
+        <usage id="SCSS" value="29" />
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <usage id="PLAIN_TEXT" value="1" />
+        <usage id="HTML" value="6" />
+        <usage id="JSON" value="54" />
+        <usage id="JavaScript" value="514" />
+        <usage id="SCSS" value="132" />
+        <usage id="CSS" value="1" />
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <usage id="ESLintLanguageService" value="2" />
+      </usages-collector>
+      <usages-collector id="statistics.terminal">
+        <usage id="local.exec" value="2">
+          <context>
+            <entry key="data_1" value="Windows" />
+            <entry key="data_2" value="Windows 10 10.0" />
+            <entry key="data_3" value="cmd.exe" />
+          </context>
+        </usage>
+      </usages-collector>
+      <usages-collector id="statistics.debugger.breakpoints.usage">
+        <usage id="new.breakpoint" value="4" />
+        <usage id="new.javascript" value="4" />
+      </usages-collector>
+    </session>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="TerminalArrangementManager">
+    <option name="myTabStates">
+      <TerminalTabState tabName="Local" currentWorkingDirectory="C:\kira\round-trip-test\" commandHistoryFileName="history-53" />
+    </option>
+  </component>
+  <component name="VcsLogIndexCollector">
+    <option name="indexTime" value="1826" />
+  </component>
+</project>
